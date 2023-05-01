@@ -37,7 +37,11 @@ p {
 }
 
 /* LAYOUT */
-.section--intro,
+.section--intro {
+    padding: 1em 2em;
+}
+
+.section--bio,
 .section--cards {
     margin-bottom: 3em;
 }
@@ -47,7 +51,6 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    /* gap: 3em; */
     column-gap: 2em;
     row-gap: 3em;
 }
@@ -97,3 +100,9 @@ h1::after {
         transform: translateY(0);
     }
 }
+
+@media screen and (min-width: 768px){
+    .section--intro {
+      padding: 50px 150px;
+    }
+  }

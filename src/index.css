@@ -3,7 +3,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: var(--dark-slate);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,6 +20,7 @@
   --green-tint: rgba(100,255,218,0.1);
   --pink: #f57dff;
   --blue: #57cbff;
+
   --font-sans: "Source Sans Pro", -apple-system, system-ui, sans-serif;
   --font-mono: "Source Code Pro", monospace;
   --font-xs: 0.875rem;
@@ -29,12 +29,12 @@
   --font-l: 1.25rem;
   --font-xl: 1.5rem;
   --font-heading: 2rem;
+
   --border: 5px;
   --border-radius: 5px;
   --nav-height: 100px;
   --nav-scroll-height: 70px;
-  --tab-height: 42px;
-  --tab-width: 120px;
+
   --easing: cubic-bezier(0.645,0.045,0.355,1);
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   --hamburger-width: 30px;

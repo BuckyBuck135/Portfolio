@@ -13,6 +13,7 @@ export default function App() {
       <Aside />
       <div className="main">
         <Intro />
+        <About />
       </div>
       
     </div>

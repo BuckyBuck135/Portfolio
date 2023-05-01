@@ -1,9 +1,6 @@
 .app {
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 2rem;
-  /* 
-  text-align: center; */
 }
 
 .main {
@@ -11,8 +8,12 @@
   font-family: var(--font-sans);
 }
 
-section {
-  margin-bottom: 1.5em;
+section:nth-child(1) {
+  background-color: var(--dark-slate);
+}
+
+section:nth-child(2) {
+  background-color: var(--slate);
 }
 
 a {
@@ -67,9 +68,5 @@ button:focus-visible {
   }
 }
 
-@media screen and (min-width: 768px){
-  .main {
-    padding: 50px 150px;
-  }
-}
+
 

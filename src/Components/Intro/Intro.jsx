@@ -19,8 +19,8 @@ export default function Intro() {
         )
     })
     return (
-        <section>
-            <div className="section--intro">
+        <section className="section--intro">
+            <div className="section--bio">
                 <h3>Bonjour, </h3>
                 <h1>Je m'appelle Geoffrey.</h1>
                 <h2 className="fadeInUp">Je construis de jolies choses sur Internet.</h2>
