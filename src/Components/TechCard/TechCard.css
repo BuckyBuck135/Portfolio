@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex: 1 1 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em
+}
+
+.card--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    border-radius: var(--border-radius);
+    padding: 0.3em;
+    background: var(--white);
+    color: var(--accent)
+}
+
+.card--heading {
+    font-size: var(--font-xl);
+    margin-top: 0.2em;
+}
+
+.card--text {
+    font-size: var(--font-s);
+    hyphens: auto;
+}

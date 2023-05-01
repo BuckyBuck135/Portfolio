@@ -1,0 +1,69 @@
+.aside--main {
+    display: none
+}
+
+.aside--container {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.aside--container-right {
+    left: auto;
+    right: 40px;
+}
+
+.aside--container-left {
+    left: 40px;
+    right: auto;
+}
+
+.aside--inner {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.aside--icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.aside--icon {
+    color: var(--white);
+}
+
+.aside--a {
+    writing-mode: vertical-rl;
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--font-xs);
+    line-height: var(--font-l);
+    letter-spacing: 0.1em;
+}
+
+.aside--inner::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--white);
+}
+
+div.aside--main > div.fadeInUp {
+    animation-delay: calc(var(--fadeInUpDelay) + 1s);
+}
+
+@media screen and (min-width: 768px){
+    .aside--main {
+        display:block
+    }
+}
