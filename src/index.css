@@ -14,7 +14,8 @@
   --heading: #ade8f4;
   --subheading: #94d2bd;
   --dark-slate: #242424;
-  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --slate: #565a65;
   --white: #F7FFF7;
   --green: #64ffda;
   --green-tint: rgba(100,255,218,0.1);
@@ -64,7 +65,8 @@ body {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 1140px;
+  padding: 1em 2em;
   margin: 0 auto;
 }
 
@@ -72,3 +74,8 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px){
+  section {
+    padding: 50px 150px;
+  }
+}

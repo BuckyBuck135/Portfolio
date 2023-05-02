@@ -1,3 +1,88 @@
-.about--main {
-    height: 500px
+.section--about {
+    background-color: var(--slate);
+}
+
+.about--text > p {
+    margin-bottom: 0.5em;
+    color: var(--white)
+}
+
+.about--skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0.5em 2.5em;
+    font-family: var(--font-mono);
+    font-size: var(--font-xs);
+    color: var(--white);
+    margin: 1em;
+}
+
+.about--span {
+    color: var(--accent);
+}
+
+.about--skills > li {
+    position: relative;
+}
+
+.about--skills > li::before {
+    content: "*";
+    position: absolute;
+    color: var(--accent);
+    left: -15px;
+}
+
+.about-picture {
+    position: relative;
+    max-width: 300px;
+}
+
+.about--image-wrapper{
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 2;
+    max-width: 300px;
+}
+
+.about--image {
+    position: relative;
+    width: 100%;
+    margin: 1.5em auto;
+    border-radius: var(--border-radius);
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.about--image-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    border-radius: var(--border-radius);
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.about--image:hover {
+    filter: grayscale(0%);
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    .about--grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0 3em;
+    }
+
+    .about--image {
+        margin: 0 auto;
+    }
 }

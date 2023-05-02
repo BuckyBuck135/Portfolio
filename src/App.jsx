@@ -11,10 +11,10 @@ export default function App() {
     <div className="app">
       <Header />
       <Aside />
-      <div className="main">
+      {/* <div className="main"> */}
         <Intro />
         <About />
-      </div>
+      {/* </div> */}
       
     </div>
   )

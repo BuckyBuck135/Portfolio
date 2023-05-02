@@ -4,7 +4,6 @@ header {
     padding: 0 2em;
     font-family: var(--font-mono);
     background-color: var(--dark-slate);
-
 }
 
 nav {
@@ -17,7 +16,6 @@ nav {
 
 .logo {
     width: 60px;
-    color: red;
 }
 
 .nav--links {
@@ -66,6 +64,10 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        padding: 0 60px;
+    }
+    
     .nav--links {
         display: flex;
     }

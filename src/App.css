@@ -1,19 +1,7 @@
 .app {
   margin: 0 auto;
   min-height: 100vh;
-}
-
-.main {
-  max-width: 1140px;
   font-family: var(--font-sans);
-}
-
-section:nth-child(1) {
-  background-color: var(--dark-slate);
-}
-
-section:nth-child(2) {
-  background-color: var(--slate);
 }
 
 a {
@@ -29,6 +17,38 @@ a:hover {
 
 body {
   color: var(--white);
+}
+
+.section--number {
+  font-family: var(--font-mono);
+  margin-right: 10px;
+}
+
+.section--heading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  margin: 2em 0 1em 0;
+  color: var(--accent)
+}
+
+.section--heading::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--white);
+  width: 50px;
+  margin-right: 10px;
+}
+
+.section--heading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--white);
+  width: 100%;
+  margin-left: 10px;
 }
 
 
@@ -69,4 +89,17 @@ button:focus-visible {
 }
 
 
+@media screen and (min-width: 768px){
+
+  .section--heading::before {
+    margin-right: 20px;
+  }
+
+  .section--heading::after {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+
+}
 
