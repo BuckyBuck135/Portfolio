@@ -3,6 +3,7 @@ import Header from './Components/Header/Header'
 import Aside from './Components/Aside/Aside'
 import Intro from './Components/Intro/Intro'
 import About from './Components/About/About'
+import Projects from './Components/Projects.jsx/Projects'
 
 
 export default function App() {
@@ -11,10 +12,9 @@ export default function App() {
     <div className="app">
       <Header />
       <Aside />
-      {/* <div className="main"> */}
         <Intro />
         <About />
-      {/* </div> */}
+        <Projects />
       
     </div>
   )
