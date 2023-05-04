@@ -80,7 +80,7 @@ h1::after {
     background: var(--accent);
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(2, start) infinite;
+        blink 750ms steps(2, start) forwards 12; /*stops after 12 blinks*/
 }
 
 .fadeInUp {
