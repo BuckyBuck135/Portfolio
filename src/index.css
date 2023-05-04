@@ -78,4 +78,8 @@ img {
   section {
     padding: 50px 150px;
   }
+
+  .container {
+    padding: 0
+  }
 }

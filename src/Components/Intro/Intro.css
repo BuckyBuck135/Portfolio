@@ -15,13 +15,12 @@
   }
   
   .intro--cards-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      text-align: center;
-      column-gap: 2em;
-      row-gap: 3em;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 3em;
+    justify-items: center;
+}
 
 /* TYPOGRAPHY */
 .intro--bio > h1,
@@ -101,5 +100,15 @@ h1::after {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1040px){
+
+    .intro--cards-wrapper {
+        display: flex;
+        justify-content: space-around;
     }
 }
