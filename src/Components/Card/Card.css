@@ -1,0 +1,14 @@
+.project-card {
+    width: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.project-card--image {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    filter:brightness(85%);
+    transition: 0.3s;
+}

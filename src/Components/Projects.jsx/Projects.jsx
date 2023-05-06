@@ -4,14 +4,21 @@ import Modal from 'react-modal';
 import "./Projects.css"
 import {data} from "../../data/projects-data"
 import Carrousel from "../Carrousel/Carrousel";
-
-
-
+import Card from "../Card/Card";
 
 Modal.setAppElement('#root');
 
 export default function Projects() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  const cards = data.map((item, index) => {
+    return (
+        <Card 
+            key={index}
+            item={item}
+        />
+    )
+})
 
   function openModal(event) {
     setIsOpen(true);
@@ -22,15 +29,26 @@ export default function Projects() {
   }
   const stack = data[0].stack.map((item, index) => {
     return <i key={index} className={item}></i>
-})
+  })
     return (
         <section className="section--projects">
             <div className="container"> 
               <h2 className="section--heading"><span className="section--number">02.</span> Projets</h2> 
-            </div>
-
-            <div>
+              <div className="gallery">
+                {cards}
+              </div>
               <button onClick={openModal}>Open Modal</button>
+
+            </div>
+            
+            <div>
+              
+
+
+
+
+
+
               <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
