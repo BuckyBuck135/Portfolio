@@ -29,9 +29,7 @@
     font-family: var(--font-mono);
 }
 
-h3 {
-    color: var(--heading);
-}
+
 
 /* h1, h2, h3 {
     font-size: clamp(1.8rem, 5vw, 3rem);
@@ -49,6 +47,10 @@ h3 {
     color: var(--subheading);
     line-height: 1; 
     margin-bottom: 0.6em;
+}
+
+.intro--bio > h3 {
+    color: var(--heading);
 }
 
 .intro--bio > p {
