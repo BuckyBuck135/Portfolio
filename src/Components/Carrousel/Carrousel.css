@@ -1,15 +1,24 @@
 .carrousel--container {
+    display: flex;
+    justify-content: center;
     position: relative;
     margin-bottom: 15px;
     height: 60%;
     z-index: 99;
     display: flex;
+    /* background-image:
+    linear-gradient(black, black),
+    url(../../assets/Paper8.jpg);
+  background-size: cover;
+  background-blend-mode: saturation; */
+  background-image: url("../../assets/Paper8.jpg");
+  filter: grayscale(0.5);
 }
 
 .carrousel--image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .carrousel--arrow {
@@ -21,6 +30,9 @@
     cursor: pointer;
 }
 
+.carrousel--arrow:hover {
+    fill: var(--dark-slate)
+}
 .previous {
     left: 10px
 }
@@ -31,8 +43,8 @@
 
 .carrousel--caption {
     font-family: var(--font-sans);
-    font-size: var(--font-xl);
-    color: white;
+    font-size: var(--font-l);
+    color: var(--dark-slate-alpha);
     position: absolute;
     left: 45%;
     bottom: 15px;
@@ -46,6 +58,7 @@
     width: 100%;
     opacity: 1;
     transition: opacity linear 0.5s ;
+    overflow: hidden;
 }
 
 .carrousel--active::before {
@@ -60,7 +73,6 @@
 
 @media screen and (min-width: 768px) {
     .carrousel--container {
-        height: 415px;
     }
 
     .carrousel--arrow {
