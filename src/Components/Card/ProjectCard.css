@@ -1,0 +1,111 @@
+/* .project-card--wrapper {
+    max-width: 400px;
+} */
+
+.project-card {
+    width: 100%;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.project-card--image {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    filter:brightness(85%);
+    transition: 0.3s;
+}
+
+.modal--open-btn {
+    /* position: absolute; */
+    width: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-family: inherit;
+    color: var(--dark-slate);
+    background-color: var(--accent);
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+/* ON HOVER */
+.project-card--on-hover {
+    position: absolute;
+    background-color: var(--dark-slate);
+    width: 100%;
+    height: 100%;
+    
+}
+  /* MODAL */
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: var(--white);
+    height: 90vh;
+    width: 80vw;
+    color: var(--dark-slate);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(36 36 36 / 70%); /*dark slate, 70% opacity)*/
+  }
+  
+  .modal--info {
+    padding: 0.5em 1em;
+  }
+  
+  
+  
+  .modal--heading {
+    font-size: var(--font-m)
+  }
+  
+  .modal--subheading {
+    font-size: var(--font-s);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+  }
+  
+  .modal--description {
+    font-size: var(--font-s);
+    padding-top: 10px;
+  
+  }
+  
+  .modal--link {
+    width: 40px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--accent);
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .stack--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .modal{
+      max-width: 1140px;
+    }     
+  }
