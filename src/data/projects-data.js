@@ -56,6 +56,28 @@ export const data = [
             "REACT",
             "CSS",
         ]
-    }     
+    },  
+    {
+        id: nanoid(),
+        cover: "/images/sliced/cover.jpg",
+        pictures: [
+            "/images/sliced/order.jpg",
+            "/images/sliced/form.jpg",
+            "/images/sliced/pay.jpg",          
+        ],
+        heading: "Sliced",
+        subheading: "Commande de pizzas en ligne",
+        description: "Sliced, the home of the true pizza slice, est basé sur un projet solo Scrimba frontend career path pour le module 5 Essential JS. J'y ai ajouté mon propre style, avec un logo Illustrator fait sur mesure, et mis en application des concepts tels que l'utilisation de data attributes, .map() et validation de formulaire.",
+        stack: [
+            "fa-brands fa-html5",
+            "fa-brands fa-css3-alt"
+        ],
+        liveUrl: "https://github.com/BuckyBuck135/Food-ordering-app",
+        repoUrl: "https://github.com/BuckyBuck135/Food-ordering-app",
+        tags: [
+            "HTML",
+            "CSS",
+        ]
+    },   
 ]
 
