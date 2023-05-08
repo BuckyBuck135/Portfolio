@@ -4,7 +4,7 @@ import "./TechCard.css"
 
 export default function TechCard(props) {
     return (
-        <article className="card">
+        <article className="tech-card">
             <span className="card--icon"><FontAwesomeIcon icon={props.icon} /></span>
             <h4 className="card--heading">{props.heading}</h4>
             <p className="card--text">{props.text}</p>

@@ -1,9 +1,9 @@
-.card {
+.tech-card {
     max-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.3em
+    gap: 0.3em;
 }
 
 .card--icon {
@@ -16,7 +16,9 @@
     border-radius: var(--border-radius);
     padding: 0.3em;
     background: var(--white);
-    color: var(--accent)
+    color: var(--accent);
+    transition: all 0.25s;
+
 }
 
 .card--heading {
@@ -27,4 +29,10 @@
 .card--text {
     font-size: var(--font-s);
     hyphens: auto;
+}
+
+.card--icon:hover,
+.card--icon:focus {
+    background: var(--accent);
+    color: var(--white)
 }
