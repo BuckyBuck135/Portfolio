@@ -23,18 +23,7 @@ const cards = data.map((item, index) => {
               <div className="gallery">
                 {cards}
               </div>
-
             </div>
-            
-            <div>
-              
-
-
-
-
-
-
-    </div>
         </section>
     )
 }
