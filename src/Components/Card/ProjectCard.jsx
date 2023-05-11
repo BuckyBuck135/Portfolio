@@ -45,7 +45,7 @@ export default function ProjectCard(props) {
                         <div className="fadeInUp">
                             <h2>{props.item.heading}</h2>
                             <h3>{props.item.subheading}</h3>
-                            {tags}
+                            <span className="project-card--tags">{tags}</span>
                         </div>
                         <button className="modal--open-btn fadeInDown"onClick={openModal}>DÉTAILS</button>
                     </div>
@@ -65,19 +65,20 @@ export default function ProjectCard(props) {
                         <div> 
                             <h2 className="modal--heading">{props.item.heading}</h2>
                             <h3 className="modal--subheading">{props.item.subheading}</h3>
+                            <p className="modal--description">{props.item.description}</p>
                         </div>
                         <div className="stack--wrapper">
                             {stack}
-                        </div>
+                        </div>   
                     </div>
-                    <p className="modal--description">{props.item.description}</p>
+                    <div className="modal--buttons-wrapper">
+                        <a href={props.item.liveUrl} target="_blank" className="modal--link"><i className="fa-solid fa-arrow-up-right-from-square"></i>SITE</a>
+                        <a href={props.item.repoUrl} target="_blank" className="modal--link"><i className="fa-brands fa-github"></i>CODE</a>
+                        <button className="modal--link modal--close-btn"onClick={closeModal}>X</button>
+                    </div> 
                 </div>
 
-                <div className="modal--buttons-wrapper">
-                <a href={props.item.liveUrl} target="_blank" className="modal--link"><i class="fa-solid fa-arrow-up-right-from-square"></i>SITE</a>
-                <a href={props.item.repoUrl} target="_blank" className="modal--link"><i class="fa-brands fa-github"></i>CODE</a>
-                <button className="modal--link modal--close-btn"onClick={closeModal}>X</button>
-                </div>  
+                 
             </Modal>
         </a>
         

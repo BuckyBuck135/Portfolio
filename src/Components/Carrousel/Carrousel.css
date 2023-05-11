@@ -5,11 +5,11 @@
     /* margin-bottom: 15px; */
     height: 50%;
     z-index: 99;
-    /* background-image:
+    background-image:
     linear-gradient(black, black),
     url(../../assets/Paper8.jpg);
   background-size: cover;
-  background-blend-mode: saturation; */
+  background-blend-mode: saturation;
   /* background-image: url("../../assets/Paper8.jpg");
   filter: grayscale(0.5); */
   box-shadow: 0px 5px 5px -2px grey;
@@ -23,10 +23,10 @@
 
 .carrousel--arrow {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: 40px;
+    /* top: 0; */
+    bottom: 15px;
+    /* margin: auto 0; */
+    height: 20px;
     cursor: pointer;
 }
 
@@ -72,18 +72,16 @@
 
 
 @media screen and (min-width: 768px) {
-    .carrousel--container {
-    }
-
+    
     .carrousel--arrow {
-        height: 80px;
+        height: 40px;
     }
     
     .previous {
-        left: 25px
+        left: 15px
     }
     
     .next {
-        right: 25px
+        right: 15px
     }
 }
