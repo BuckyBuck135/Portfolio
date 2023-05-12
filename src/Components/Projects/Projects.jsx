@@ -17,7 +17,7 @@ const cards = data.map((item, index) => {
 })
   
     return (
-        <section className="section--projects">
+        <section className="section--projects shapedividers_com-7055">
             <div className="container"> 
               <h2 className="section--heading"><span className="section--number">02.</span> Projets</h2> 
               <div className="gallery">
