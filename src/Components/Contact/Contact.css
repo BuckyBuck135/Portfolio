@@ -1,0 +1,98 @@
+.section--contact {
+    padding-top: 4em;
+    background-color: var(--slate);
+    position: relative;
+}
+
+.section--contact svg {
+left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contact--subheading {
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.section--contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section--contact form > * {
+    font-family: var(--font-mono);
+    padding: 0.5em 0 0.5em 0.5em;
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    height: 200px;
+    resize:none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--white);
+    filter: brightness(0.7);
+    padding-left: 0.5em
+}
+
+form input[type="submit"] {
+    width: 80px;
+    align-self: flex-end;
+    border: 2px solid var(--accent);
+    padding: 0.6em 1.2em;
+    transition: all 0.25s;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid var(--accent);
+    background-color: var(--accent);
+    color: var(--white)
+}
+
+@media screen and (min-width: 768px){
+
+    .section--contact  {
+        padding-top: 6em;
+    }
+
+    .contact--subheading {
+        text-align: center;
+    }
+
+    .section--contact form {
+        margin: 0 auto;
+        max-width: 800px;
+        align-items: center;
+    }
+
+    .section--contact form > * {
+        width: 100%;
+    }
+
+    .section--contact .section--heading {
+        width: max-content;
+        margin: 2em auto 1em auto;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .section--contact .section--heading::before {
+        content: none;
+    }
+
+    .section--contact .section--heading::after {
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: var(--white);
+        width: 100%;
+        margin-left: 0;
+        position: absolute;
+        bottom: -5px;
+    }
+}
