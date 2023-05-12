@@ -6,6 +6,7 @@
     width: 40px;
     position: fixed;
     bottom: 0px;
+    z-index: 5;
 }
 
 .aside--container-right {

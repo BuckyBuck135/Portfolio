@@ -39,7 +39,6 @@ export default function ProjectCard(props) {
         > 
             <article id={props.item.id} className="project-card">
                 <img className="project-card--image" src={`${props.item.cover}`} alt={props.item.heading}/>
-                {/* <div className="project-card--image" style={{ backgroundImage: `url(${props.item.cover})` }} /> */}
                 {isHovering &&
                     <div className="project-card--on-hover">
                         <div className="fadeInUp">

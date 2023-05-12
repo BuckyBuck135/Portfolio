@@ -25,8 +25,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; 
-  /* border: 1px solid white; 
-  border-radius: var(--border-radius); */
+  transition: var(--transition);
 }
 
 .project-card--on-hover h2 {
