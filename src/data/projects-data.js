@@ -13,7 +13,6 @@ export const data = [
         id: nanoid(),
         cover: "/images/kasa/mockup.jpg",
         pictures: [
-            "/images/kasa/mockup.jpg",
             "/images/kasa/DEKSTOP-localhost_3000_fiche-logement_c67ab8a7.png",
             "/images/kasa/TABLET-kasa-location.netlify.app_a-propos.png",
             "/images/kasa/kasa-location.netlify.app_a-propos.png",
