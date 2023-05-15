@@ -1,5 +1,6 @@
 .section--about {
     background-color: var(--slate);
+    padding-top: 2em;
 }
 
 
@@ -100,7 +101,8 @@
 
 @media screen and (min-width: 768px){
     .section--about {
-        padding: 6em 0 3em 0;
+        padding-top: 6em;
+        padding-bottom: 3em;
       }
     .about--grid{
         display: grid;
