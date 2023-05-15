@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
     })
 
     const tags = props.item.tags.join(" / ")
-
+    const background = props.item.pictures[0]
     return (
         <a 
             className="project-card--wrapper"
@@ -38,15 +38,16 @@ export default function ProjectCard(props) {
             onMouseOut={handleMouseOut}
         > 
             <article id={props.item.id} className="project-card">
-                <img className="project-card--image" src={`${props.item.cover}`} alt={props.item.heading}/>
+                <img className="project-card--image" src={`${props.item.pictures[0]}`} alt={props.item.heading}/>
+
                 {isHovering &&
-                    <div className="project-card--on-hover">
+                    <div className="project-card--on-hover" onClick={openModal}>
                         <div className="fadeInUp">
                             <h2>{props.item.heading}</h2>
                             <h3>{props.item.subheading}</h3>
                             <span className="project-card--tags">{tags}</span>
                         </div>
-                        <button className="modal--open-btn fadeInDown"onClick={openModal}>DÉTAILS</button>
+                        <button className="modal--open-btn fadeInDown" onClick={openModal}>DÉTAILS</button>
                     </div>
                 }
             </article>

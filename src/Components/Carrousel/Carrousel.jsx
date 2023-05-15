@@ -28,10 +28,8 @@ export default function Carrousel(props) {
     return (
         <figure className="carrousel--container">
             {carrouselImages}
-            <div>
-                <img src={previousArrow} onClick={prevImage} className="carrousel--arrow previous" alt="Icône de défilement en avant du carrousel."/> 
-                <img src={nextArrow} onClick={nextImage} className="carrousel--arrow next" alt="Icône de défilement en arrière du carrousel."/> 
-            </div>
+            <i onClick={nextImage} className=" fa-solid fa-backward-step carrousel--arrow previous"></i>
+            <i onClick={prevImage} className=" fa-solid fa-forward-step carrousel--arrow next"></i>
         </figure>
     )
 }
