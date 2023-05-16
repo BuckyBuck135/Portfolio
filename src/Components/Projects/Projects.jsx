@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import "./Projects.css"
 import {data} from "../../data/projects-data"
-import ProjectCard from "../Card/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 
 export default function Projects() {
@@ -17,7 +17,7 @@ const cards = data.map((item, index) => {
 })
   
     return (
-        <section className="section--projects shapedividers_com-7055">
+        <section id="section--projects" className="section--projects shapedividers_com-7055">
             <div className="container"> 
               <h2 className="section--heading"><span className="section--number">02.</span> Projets</h2> 
               <div className="gallery">
