@@ -34,12 +34,3 @@ export default function Contact() {
     </section>
   );
 }
-
-// <form name="contact" method="POST" data-netlify="true">
-//                 <input type="hidden" name="form-name" value="contact" />
-//             {/* <form onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true"> */}
-//                 <input type="text" placeholder="Nom :" {...register("Name", {required: true, maxLength: 100})} />
-//                 <input type="text" placeholder="Email :" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-//                 <textarea placeholder="Votre message : " {...register("Message", {required: true})} />
-//                 <button type="submit">Envoyer</button>
-//             </form>
