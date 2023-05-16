@@ -21,7 +21,7 @@ export default function Aside() {
 
             <div className="aside--container aside--container-right fadeInUp">
                 <div className="aside--inner">
-                    <a className="aside--a" href="mailto:geoffrey.lemeur@gmail.com">geoffrey.lemeur@gmail.com</a>
+                    <a className="aside--a" href="mailto:geoffrey.lemeur@pm.me">geoffrey.lemeur@pm.me</a>
                 </div>
             </div>
         </div>
