@@ -4,7 +4,7 @@ import "./About.css"
 export default function About() {
 
     return (
-        <section className="section--about shapedividers_com-2702">
+        <section id="section--about" className="section--about shapedividers_com-2702">
             <div className="container"> 
                 <h2 className="section--heading"><span className="section--number">01.</span> À propos</h2> 
                 <div className="about--grid">

@@ -93,8 +93,14 @@
     top: 10px;
     left: 10px;
     z-index: -1;
+    transition: var(--transition);
+
 }
 
+.about--image-wrapper:hover::after {
+    top: 20px;
+    left: 20px;
+}
 .about--image:hover {
     filter: grayscale(0%);
 }
