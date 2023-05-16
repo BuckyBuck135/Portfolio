@@ -19,7 +19,9 @@ export default function Contact() {
         <div className="container"> 
             <h2 className="section--heading"><span className="section--number">03.</span> Contact</h2> 
             <h3 className="contact--subheading">Une question ? Un projet à réaliser ensemble ?</h3>
-            <form method="POST" data-netlify="true">
+            
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
             {/* <form onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true"> */}
                 <input type="text" placeholder="Nom :" {...register("Name", {required: true, maxLength: 100})} />
                 <input type="text" placeholder="Email :" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
