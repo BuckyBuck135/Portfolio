@@ -1,6 +1,7 @@
 import React from "react"
 import TechCard from "../../Components/TechCard/TechCard"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faTruckFast, faLightbulb, faMobileScreenButton, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons'
 
@@ -24,16 +25,20 @@ export default function Intro() {
                 <div className="intro--bio">
                     <h3>Bonjour, </h3>
                     <h1>Je m'appelle Geoffrey.</h1>
-                    <h2 className="fadeInUp">Je construis de jolies choses sur Internet.</h2>
-                    <p className="fadeInUp">Je suis un développeur frontend en devenir avec un intérêt particulier pour le web design. Constamment à l'affût des meilleures pratiques et nouveautés techniques, je crée des sites Internet performants et captivants.</p>  
+                    <h2 className="fadeInUp">Je construis des sites Internet sur mesure.</h2>
+                    <p className="intro--p fadeInUp">Je suis un développeur frontend et entrepreneur avec un intérêt particulier pour le web design. 
+                    Constamment à l'affût des meilleures pratiques et nouveautés techniques, je me spécialise dans la création et l'optimisation de sites internet sur mesure 
+                    pour répondre aux besoins uniques de mes clients.</p>  
                 </div>
                 <div className="intro--cards fadeInUp">
                     <div className="intro--cards-wrapper">
                         {techCards}
                     </div>
-
                 </div>
-                </div>
+                <blockquote className="intro--p">Que vous ayez besoin d'une optimisation de votre site existant ou d'un tout nouveau site web, 
+                je suis là pour vous accompagner dans votre succès en ligne.</blockquote>
+                <a href="#section--contact" className="CTA nav--button">Contactez-moi<FontAwesomeIcon icon={faEnvelope} /></a>
+            </div>
         </section>
     )
 }

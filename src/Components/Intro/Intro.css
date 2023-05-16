@@ -53,9 +53,57 @@
     color: var(--heading);
 }
 
-.intro--bio > p {
+.intro--p {
     color: var(--subheading);
     font-size: var(--font-l) 
+}
+
+blockquote {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-style: italic;
+    text-align: justify;
+    position: relative;
+}
+
+blockquote::before,
+blockquote::after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 4rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote::before {
+	content: '“';
+	left: -1.5rem;
+	top: -2rem;
+}
+
+blockquote::after {
+	content: '”';
+	right: -3.5rem;
+	bottom: -1.5rem;
+}
+
+.CTA {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-m);
+    font-weight: 700;
+    color: var(--accent);
+    background-color: var(--white);
+    gap: 0.5em;
+    width: 150px;
+    transition: var(--transition);
+}
+
+.CTA:hover {
+    transform: scale(1.2);
 }
 
 
