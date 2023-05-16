@@ -38,7 +38,7 @@ export default function ProjectCard(props) {
             onMouseOut={handleMouseOut}
         > 
             <article id={props.item.id} className="project-card">
-                <img className="project-card--image" src={`${props.item.pictures[0]}`} alt={props.item.heading}/>
+                <img className="project-card--image" src={background} alt={props.item.heading}/>
 
                 {isHovering &&
                     <div className="project-card--on-hover" onClick={openModal}>
