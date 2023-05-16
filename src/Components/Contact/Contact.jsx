@@ -19,16 +19,27 @@ export default function Contact() {
         <div className="container"> 
             <h2 className="section--heading"><span className="section--number">03.</span> Contact</h2> 
             <h3 className="contact--subheading">Une question ? Un projet à réaliser ensemble ?</h3>
-            
+
             <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-            {/* <form onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true"> */}
-                <input type="text" placeholder="Nom :" {...register("Name", {required: true, maxLength: 100})} />
-                <input type="text" placeholder="Email :" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
-                <textarea placeholder="Votre message : " {...register("Message", {required: true})} />
+                <label className="visually-hidden"></label>
+                <input className="form--input" type="text" name="name" placeholder="Nom :" required />
+                <label className="visually-hidden"></label>
+                <input className="form--input" type="text" name="email" placeholder="Email :" required />
+                <label className="visually-hidden"></label>
+                <textarea className="form--input" name="message" placeholder="Votre message : " required />
                 <button type="submit">Envoyer</button>
             </form>
         </div>
     </section>
   );
 }
+
+// <form name="contact" method="POST" data-netlify="true">
+//                 <input type="hidden" name="form-name" value="contact" />
+//             {/* <form onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true"> */}
+//                 <input type="text" placeholder="Nom :" {...register("Name", {required: true, maxLength: 100})} />
+//                 <input type="text" placeholder="Email :" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+//                 <textarea placeholder="Votre message : " {...register("Message", {required: true})} />
+//                 <button type="submit">Envoyer</button>
+//             </form>

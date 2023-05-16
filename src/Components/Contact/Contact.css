@@ -21,10 +21,14 @@ left: 0;
     width: 100%;
 }
 
-.section--contact form > * {
+.form--input {
     font-family: var(--font-mono);
     padding: 0.5em 0 0.5em 0.5em;
     margin-bottom: 0.5em;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 textarea {
