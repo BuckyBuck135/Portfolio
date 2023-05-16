@@ -1,0 +1,46 @@
+footer {
+    background-color: var(--dark-slate);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    position: relative;
+}
+
+.icon-wrapper {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-slate);
+    border: 2px solid var(--accent);
+    border-radius: var(--border-radius);
+    box-shadow: 2px 2px 10px #111111;
+    position: absolute;
+    margin: auto;
+    inset: -25px 0 auto 0;
+
+}
+.fa-angles-up {
+    color: var(--accent);
+    font-size: var(--font-heading);
+    transition: var(--transition);
+}
+
+.fa-angles-up:hover {
+    animation: pointUp backwards 0.8s infinite ;
+}
+
+footer p {
+    font-family: var(--font-mono);
+    font-size: var(--font-xs);
+    padding-bottom: 0.5em;
+
+}
+@keyframes pointUp {
+    to {
+        transform: translateY(-5px);
+    }
+  }
