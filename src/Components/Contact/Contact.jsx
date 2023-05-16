@@ -3,17 +3,16 @@ import { useForm } from 'react-hook-form';
 
 
 import "./Contact.css"
-import ProjectCard from "../Card/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 
 export default function Contact() {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
-  console.log(errors);
   
   return (
-    <section className="section--contact">
+    <section id="section--contact" className="section--contact">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0 L50 100 L100 0 Z" fill="#242424" stroke="#242424"></path>
         </svg>
