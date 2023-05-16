@@ -42,9 +42,10 @@ ul {
     transition: all 0.25s;
 }
 
-.nav--button:hover {
-    border-color: var(--subheading);
-    color: var(--subheading);
+.nav--button:hover,
+.nav--button:focus {
+    border-color: var(--accent);
+    color: var(--accent);
 }
   
 .nav--button:focus,

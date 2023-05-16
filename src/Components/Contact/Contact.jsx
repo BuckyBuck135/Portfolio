@@ -23,7 +23,7 @@ export default function Contact() {
                 <input type="text" placeholder="Nom :" {...register("Name", {required: true, maxLength: 100})} />
                 <input type="text" placeholder="Email :" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
                 <textarea placeholder="Votre message : " {...register("Message", {required: true})} />
-                <input type="submit" />
+                <button type="submit">Envoyer</button>
             </form>
         </div>
     </section>
