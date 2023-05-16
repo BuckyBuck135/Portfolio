@@ -9,12 +9,12 @@
     background-color: var(--dark-slate);
   }
   
-  .intro--bio,
-  .intro--cards {
-      margin-bottom: 3em;
-  }
-  
-  .intro--cards-wrapper {
+.intro--bio,
+.intro--cards {
+    margin-bottom: 3em;
+}
+
+.intro--cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
@@ -155,10 +155,14 @@ h1::after {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1040px){
+@media screen and (min-width: 768px){
 
     .intro--cards-wrapper {
         display: flex;
         justify-content: space-around;
+    }
+
+    blockquote {
+        margin: 4em auto 0 auto;
     }
 }
