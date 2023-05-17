@@ -1,7 +1,7 @@
 :root {
-   --typewriterSpeed: 4s;
+   --typewriterSpeed: 3.5s;
    --typewriterCharacters: 22;
-   --fadeInUpDelay: calc(var(--typewriterSpeed) + 2s)
+   --fadeInUpDelay: calc(var(--typewriterSpeed) + 1s)
 }
 
 /* LAYOUT */
