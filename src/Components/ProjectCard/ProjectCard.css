@@ -9,6 +9,7 @@
 .project-card--image {
   /* border-radius: 10px; */
   object-fit: cover;
+  object-position: top;
   width: 100%;
   filter:brightness(85%);
   transition: 0.3s;
@@ -97,6 +98,8 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
+
 }
 
 .modal--info {
@@ -125,7 +128,7 @@
   gap: 0.2em;
 }
 
-.stack--wrapper .fa-brands {
+.stack--wrapper i {
   font-size: var(--font-m);
   color: var(--subheading);
 }
@@ -149,7 +152,7 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--subheading);
   background-color: var(--subheading);
-  color: var(--white);
+  color: var(--dark-slate);
   font-size: var(--font-xs);
   font-family: inherit;
   cursor: pointer;
@@ -164,7 +167,7 @@
 }
 
 .modal--link i {
-  color: var(--white);
+  color: var(--dark-slate);
   margin-right: 0.3em;
 }
 
@@ -178,20 +181,17 @@
 
 .modal--close-btn:hover {
   transform: scale(1.1);
-  /* border: 1px solid var(--dark-slate);
-  background-color: var(--dark-slate);
-  color: var(--white) */
 }
 
 
 /* ANIMATIONS */
-.fadeInUp {
+.cardFadeInUp {
   opacity: 0;
   transform: translateY(-3rem);
   animation: fadeIn 2s ease forwards;
 }
 
-.fadeInDown {
+.cardFadeInDown {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeIn 2s ease forwards;
@@ -233,5 +233,9 @@
 
   .stack--wrapper .fa-brands {
     font-size: var(--font-xl)
+  }
+
+  .modal--description {
+    line-height: 1.8;
   }
 }

@@ -59,7 +59,7 @@
     background-color: var(--white);
 }
 
-div.aside--main > div.fadeInUp {
+div.aside--main > div.delay {
     animation-delay: calc(var(--fadeInUpDelay) + 1s);
 }
 

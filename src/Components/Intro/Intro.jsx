@@ -35,9 +35,9 @@ export default function Intro() {
                         {techCards}
                     </div>
                 </div>
-                <blockquote className="intro--p">Que vous ayez besoin d'une optimisation de votre site existant ou d'un tout nouveau site web, 
+                <blockquote className="fadeInUp fadeInLeft">Que vous ayez besoin d'une optimisation de votre site existant ou d'un tout nouveau site web, 
                 je suis là pour vous accompagner dans votre succès en ligne.</blockquote>
-                <a href="#section--contact" className="CTA nav--button">Contactez-moi<FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href="#section--contact" className="CTA nav--button fadeInUp fadeInRight">Contactez-moi<FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
         </section>
     )

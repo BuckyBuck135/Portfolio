@@ -42,12 +42,12 @@ export default function ProjectCard(props) {
 
                 {isHovering &&
                     <div className="project-card--on-hover" onClick={openModal}>
-                        <div className="fadeInUp">
+                        <div className="cardFadeInUp">
                             <h2>{props.item.heading}</h2>
                             <h3>{props.item.subheading}</h3>
                             <span className="project-card--tags">{tags}</span>
                         </div>
-                        <button className="modal--open-btn fadeInDown" onClick={openModal}>DÉTAILS</button>
+                        <button className="modal--open-btn cardFadeInDown" onClick={openModal}>DÉTAILS</button>
                     </div>
                 }
             </article>

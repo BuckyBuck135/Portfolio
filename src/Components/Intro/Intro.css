@@ -54,14 +54,16 @@
 }
 
 .intro--p {
-    color: var(--subheading);
-    font-size: var(--font-l) 
+    color: var(--white);
+    font-size: var(--font-l); 
 }
 
 blockquote {
     max-width: 400px;
     margin: 0 auto;
     padding: 0.5em;
+    color: var(--subheading);
+    font-size: var(--font-l);
     font-style: italic;
     text-align: justify;
     position: relative;
@@ -93,12 +95,13 @@ blockquote::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--font-m);
+    font-size: var(--font-l);
     font-weight: 700;
     color: var(--accent);
     background-color: var(--white);
     gap: 0.5em;
-    width: 150px;
+    width: 175px;
+    height: 50px;
     transition: var(--transition);
 }
 
@@ -138,6 +141,15 @@ h1::after {
     animation: fadeInUp 2s ease var(--fadeInUpDelay) forwards;
 }
 
+.fadeInLeft {
+    transform: translateX(-3rem);
+    animation-delay: calc(var(--fadeInUpDelay) + 1s);
+}
+
+.fadeInRight {
+    transform: translateX(3rem);
+    animation-delay: calc(var(--fadeInUpDelay) + 1s);
+}
 @keyframes typewriter {
     to {left: 100%}
 }
