@@ -29,8 +29,6 @@
     font-family: var(--font-mono);
 }
 
-
-
 /* h1, h2, h3 {
     font-size: clamp(1.8rem, 5vw, 3rem);
 } */
@@ -55,7 +53,8 @@
 
 .intro--p {
     color: var(--white);
-    font-size: var(--font-l); 
+    font-size: var(--font-m); 
+    padding-top: 10px;
 }
 
 blockquote {
@@ -74,7 +73,6 @@ blockquote::after {
 	position: absolute;
 	color: #f1efe6;
 	font-size: 4rem;
-	width: 4rem;
 	height: 4rem;
 }
 
@@ -86,8 +84,8 @@ blockquote::before {
 
 blockquote::after {
 	content: '”';
-	right: -3.5rem;
-	bottom: -1.5rem;
+    right: -1rem;
+    bottom: -1.5rem;
 }
 
 .CTA {
@@ -103,12 +101,12 @@ blockquote::after {
     width: 175px;
     height: 50px;
     transition: var(--transition);
+    box-shadow: 16px 14px 20px #0000008c;
 }
 
 .CTA:hover {
     transform: scale(1.2);
 }
-
 
 /* ANIMATIONS & EFFECTS */
 h1::before,

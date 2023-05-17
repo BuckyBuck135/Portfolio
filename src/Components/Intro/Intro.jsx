@@ -26,8 +26,8 @@ export default function Intro() {
                     <h3>Bonjour, </h3>
                     <h1>Je m'appelle Geoffrey.</h1>
                     <h2 className="fadeInUp">Je construis des sites Internet sur mesure.</h2>
-                    <p className="intro--p fadeInUp">Je suis un développeur frontend et entrepreneur avec un intérêt particulier pour le web design. 
-                    Constamment à l'affût des meilleures pratiques et nouveautés techniques, je me spécialise dans la création et l'optimisation de sites internet sur mesure 
+                    <p className="intro--p fadeInUp">Je suis un développeur frontend et entrepreneur avec un intérêt particulier pour le web design.</p> 
+                    <p className="intro--p fadeInUp">Constamment à l'affût des meilleures pratiques et nouveautés techniques, je me spécialise dans la création et l'optimisation de sites internet sur mesure 
                     pour répondre aux besoins uniques de mes clients.</p>  
                 </div>
                 <div className="intro--cards fadeInUp">
