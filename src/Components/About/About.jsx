@@ -14,7 +14,7 @@ export default function About() {
                         <p>Geek depuis mon enfance, mon intérêt pour le développement s'est matérialisé en 2022 lorsque j'ai pris en main le site Internet de mon entreprise suite au départ de notre développeur. 
                         Il fallait apprendre comment gérer et maintenir un site, et vite !</p>
                         <p>Je me suis donc formé et ai obtenu une <span className="about--span">certification professionnelle "Développeur intégrateur web"</span> équivalent bac +2 auprès de OpenClassrooms. J'ai également suivi le cursus <span className="about--span">"Front-end Career Path"</span> de Scrimba pour continuer à me perfectionner. </p>
-                        <p>Voici quelques une des technologies j'ai récemment utilisées dans mes projets :</p>
+                        <p>Voici quelques une des technologies que j'ai récemment utilisées dans mes projets :</p>
                         <ul className="about--skills">
                             <li>JavaScript (ES6)</li>
                             <li>React</li>
