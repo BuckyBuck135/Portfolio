@@ -2,9 +2,6 @@ import React from "react"
 import TechCard from "../../Components/TechCard/TechCard"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTruckFast, faLightbulb, faMobileScreenButton, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons'
-
 import "./Intro.css"
 import data from "../TechCard/TechCard-data"
 
@@ -32,13 +29,12 @@ export default function Intro() {
                 </div>
                 <div className="intro--cards fadeInUp">
                 {techCards}
-
-                    {/* <div className="intro--cards-wrapper">
-                    </div> */}
                 </div>
                 <blockquote className="fadeInUp fadeInLeft">Que vous ayez besoin d'une optimisation de votre site existant ou d'un tout nouveau site web, 
                 je suis là pour vous accompagner dans votre succès en ligne.</blockquote>
-                <a href="#section--contact" className="CTA fadeInUp fadeInRight">Contactez-moi<FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href="#section--contact" className="CTA fadeInUp fadeInRight">
+                    <div className="CTA-text">Contactez-moi<FontAwesomeIcon icon={faEnvelope}/></div>
+                </a>
             </div>
         </section>
     )
