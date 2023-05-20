@@ -8,7 +8,6 @@ a {
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
-  transition: var(--transition)
 }
 
 a:hover {
@@ -80,6 +79,117 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/*****ANIMATIONS *****/
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease var(--fadeInUpDelay) forwards;
+}
+
+.fadeInLeft {
+  transform: translateX(-3rem);
+  animation-delay: calc(var(--fadeInUpDelay) + 1s);
+}
+
+.fadeInRight {
+  transform: translateX(3rem);
+  animation-delay: calc(var(--fadeInUpDelay) + 1s);
+}
+
+.slideIn {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+@media ( prefers-reduced-motion: no-preference ) {
+
+  .timeBombButton {
+      position: relative;
+      overflow: hidden;
+  }
+  .timeBombButton:hover {
+      color: var(--white);
+      background-color: var(--accent);
+      box-shadow: 16px 14px 20px #0000008c, 0 0 10px var(--accent), 0 0 30px var(--accent), 0 0 60px var(--accent);
+      transition-delay: 0.8s;
+  }
+
+  .timeBombButton span {
+      position: absolute;
+      display: block;
+  }
+
+  .timeBombButton span:nth-child(1) {
+      top: 0;
+      left:-100%;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, transparent, var(--accent));
+  }
+
+  .timeBombButton:hover span:nth-child(1) {
+      left:100%;
+      transition: 1s;
+  }
+
+  .timeBombButton span:nth-child(3) {
+      bottom: 0;
+      right:-100%;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(270deg, transparent, var(--accent));
+  }
+
+  .timeBombButton:hover span:nth-child(3) {
+      right:100%;
+      transition: 1s;
+      transition-delay: 0.4s;
+  }
+
+  .timeBombButton span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, var(--accent));
+  }
+
+  .timeBombButton:hover span:nth-child(2) {
+      top :100%;
+      transition: 1s;
+      transition-delay: 0.2s;
+  }
+
+  .timeBombButton span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, var(--accent));
+  }
+
+  .timeBombButton:hover span:nth-child(4) {
+      bottom :100%;
+      transition: 1s;
+      transition-delay: 0.6s;
+  }
+} 
+
+@keyframes typewriter {
+  to {left: 100%}
+}
+
+@keyframes blink {
+  to {visibility: hidden}
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {
