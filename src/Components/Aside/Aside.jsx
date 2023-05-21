@@ -11,10 +11,10 @@ export default function Aside() {
             <div className="aside--container aside--container-left fadeInUp delay">
                 <div className="aside--inner">
                     <div className="aside--icon-wrapper">
-                        <a className="aside--icon" href=""><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a className="aside--icon" href=""><FontAwesomeIcon icon={faGithubSquare} /></a>
-                        <a className="aside--icon" href=""><FontAwesomeIcon icon={faInstagramSquare} /></a>
-                        <a className="aside--icon" href=""><FontAwesomeIcon icon={faTwitterSquare} /></a>
+                        <a className="aside--icon" href="https://www.linkedin.com/in/geoffreylemeur/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a className="aside--icon" href="https://github.com/BuckyBuck135" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
+                        <a className="aside--icon" href="https://www.instagram.com/geoffrey.lm.dev/" target="_blank"><FontAwesomeIcon icon={faInstagramSquare} /></a>
+                        <a className="aside--icon" href="https://twitter.com/BuckyBuck135" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} /></a>
                     </div>
                 </div>
             </div>
