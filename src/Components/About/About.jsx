@@ -1,14 +1,35 @@
 import React from "react"
 import "./About.css"
+import { useState, useRef, useEffect } from 'react'
 
 export default function About() {
+    const [isIntersecting, setIsIntersecting] = useState(false)
+    const ref = useRef(null)
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsIntersecting(entry.isIntersecting)
+            },
+            {rootMargin: "-150px"}
+        );
+        observer.observe(ref.current);
+        return () => observer.disconnect()
+    }, [])
 
+    useEffect(() => {
+        const refNode = ref.current.querySelector("div")
+        if (isIntersecting) {
+            refNode.classList.add("slideIn")
+        } else {
+            refNode.classList.remove("slideIn")
+        }
+    }, [isIntersecting])
     return (
-        <section id="section--about" className="section--about shapedividers_com-2702">
+        <section ref={ref} id="section--about" className="section--about shapedividers_com-2702">
             <div className="container"> 
                 <h2 className="section--heading"><span className="section--number">01.</span> À propos</h2> 
                 <div className="about--grid">
-                    <div className="about--text">
+                    <div  className="about--text">
                         <p>Bonjour ! Je m'appelle Geoffrey Le Meur et je suis un <span className="about--span">développeur web freelance</span> passionné par la création de sites Internet offrant une expérience utilisateur exceptionnelle. 
                         Également chef d'une petite entreprise dans l'hôtellerie, je me spécialise dans la <span className="about--span">création de sites vitrines pour PME</span> afin d'offrir à mes clients la visibilité qu'ils méritent.</p>
                         <p>Geek depuis mon enfance, mon intérêt pour le développement s'est matérialisé en 2022 lorsque j'ai pris en main le site Internet de mon entreprise suite au départ de notre développeur. 
@@ -26,7 +47,7 @@ export default function About() {
                     </div>
                     <div className="about--picture">
                         <div className="about--image-wrapper">
-                        <img className="about--image" src="portrait-geoffrey.jpg" />
+                        <img className="about--image" src="portrait-geoffrey.jpg" alt="Geoffrey Le Meur souriantm face à l'objectif"/>
                         </div>
                     </div>
                 </div>
