@@ -93,14 +93,6 @@ blockquote::after {
     cursor: pointer;
 }
 
-/* .CTA-text {
-    z-index: 2;
-}
-
-.CTA-text svg {
-    margin-left: 0.5em;
-} */
-
 /* ANIMATIONS & EFFECTS */
 :root {
     --typewriterSpeed: 2.5s;
@@ -108,8 +100,8 @@ blockquote::after {
     --fadeInUpDelay: calc(var(--typewriterSpeed) + 1s)
  }
 
-h2::before,
-h2::after {
+.intro--bio h2::before,
+.intro--bio h2::after {
     position: absolute;
     content: "";
     top: 0;
@@ -118,13 +110,13 @@ h2::after {
     right:0;
 }
 
-h2::before {
+.intro--bio h2::before {
     background: var(--dark-slate);
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;    
 }
 
-h2::after {
+.intro--bio h2::after {
     width: 0.125em;
     background: var(--accent);
     animation: 
