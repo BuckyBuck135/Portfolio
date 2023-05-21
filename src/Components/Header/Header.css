@@ -57,6 +57,7 @@ ul {
 
 .nav--text {
     color: var(--white);
+    transition: var(--transition)
 }
 
 .nav--span {
