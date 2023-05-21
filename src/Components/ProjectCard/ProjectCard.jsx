@@ -2,6 +2,7 @@ import React from "react";
 import Modal from 'react-modal';
 import Carrousel from "../Carrousel/Carrousel";
 import "./ProjectCard.css"
+gsap.registerPlugin(ScrollTrigger);
 
 Modal.setAppElement('#root');
 
@@ -31,9 +32,24 @@ export default function ProjectCard(props) {
 
     const tags = props.item.tags.join(" / ")
     const background = props.item.pictures[0]
+
+    const cards = gsap.utils.toArray('.project-card--wrapper');
+    cards.forEach(card => {
+      gsap.to(card, { 
+        x: 0,
+        opacity: 1,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: card,
+          toggleActions: "play none play reset"
+        }
+      })
+    });
+    
+
     return (
         <a 
-            className="project-card--wrapper"
+        className="project-card--wrapper"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
         > 

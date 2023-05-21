@@ -1,3 +1,13 @@
+.project-card--wrapper:nth-child(odd) {
+  opacity: 0;
+  transform: translateX(-3em);
+}
+
+.project-card--wrapper:nth-child(even) {
+  opacity: 0;
+  transform: translateX(3em);
+}
+
 .project-card {
   width: 100%;
   height: 175px;
@@ -7,7 +17,6 @@
 }
 
 .project-card--image {
-  /* border-radius: 10px; */
   object-fit: cover;
   object-position: top;
   width: 100%;
