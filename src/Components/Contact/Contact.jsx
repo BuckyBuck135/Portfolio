@@ -21,14 +21,16 @@ export default function Contact() {
             <h3 className="contact--subheading">Une question ? Un projet à réaliser ensemble ?</h3>
 
             <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+                <input aria-label="contact" type="hidden" name="form-name" value="contact" />
                 <label className="visually-hidden"></label>
-                <input className="form--input" type="text" name="name" placeholder="Nom" required />
+                <input aria-label="nom" className="form--input" type="text" name="name" placeholder="Nom" required />
                 <label className="visually-hidden"></label>
-                <input className="form--input" type="text" name="email" placeholder="Email" required />
+                <input aria-label="email" className="form--input" type="text" name="email" placeholder="Email" required />
                 <label className="visually-hidden"></label>
-                <textarea className="form--input" name="message" placeholder="Votre message" required />
-                <button type="submit">Envoyer</button>
+                <textarea aria-label="envoyer" className="form--input" name="message" placeholder="Votre message" required />
+                <button type="submit" className="timeBombButton">
+                  <span></span><span></span><span></span><span></span>
+                  Envoyer</button>
             </form>
         </div>
     </section>
