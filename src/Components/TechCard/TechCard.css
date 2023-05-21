@@ -63,4 +63,20 @@
         text-align: center;
         margin-bottom: 0.3em;
     }
+
+    .tech-card--fade0 {
+        animation-delay: calc(var(--fadeInUpDelay) + 1s)
+      }
+      
+      .tech-card--fade1 {
+        animation-delay: calc(var(--fadeInUpDelay) + 1.2s)
+      }
+      
+      .tech-card--fade2 {
+        animation-delay: calc(var(--fadeInUpDelay) + 1.4s)
+      }
+      
+      .tech-card--fade3 {
+        animation-delay: calc(var(--fadeInUpDelay) + 1.6s)
+      }
 }

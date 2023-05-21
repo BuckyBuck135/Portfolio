@@ -4,7 +4,7 @@ import "./TechCard.css"
 
 export default function TechCard(props) {
     return (
-        <article className="tech-card">
+        <article className={`tech-card fadeInUp tech-card--fade${props.className}`}>
             <div className="wrapper-icon">
                 <span className="card--icon"><FontAwesomeIcon icon={props.icon} /></span>
             </div>
