@@ -18,11 +18,16 @@ export default function ProjectCard(props) {
     }
 
     const [isHovering, setIsHovering] = React.useState(false);
-    const handleMouseOver = () => {
-        setIsHovering(true);
+    const handleClickIn = (e) => {
+        console.log(e.target.id)
+        if(e.target.id) {
+            setIsHovering(true);
+        } else {
+            setIsHovering(false)
+        }
     }
 
-    const handleMouseOut = () => {
+    const handleClickOut = () => {
         setIsHovering(false);
     }
 
@@ -50,14 +55,13 @@ export default function ProjectCard(props) {
     return (
         <a 
         className="project-card--wrapper"
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
+            onClick={handleClickIn}
         > 
-            <article id={props.item.id} className="project-card">
-                <img className="project-card--image" src={background} alt={props.item.heading}/>
+            <article  className="project-card">
+                <img id={props.item.id} className="project-card--image" src={background} alt={props.item.heading}/>
 
                 {isHovering &&
-                    <div className="project-card--on-hover" onClick={openModal}>
+                    <div className="project-card--on-hover" onClick={handleClickOut}>
                         <div className="cardFadeInUp">
                             <h2>{props.item.heading}</h2>
                             <h3>{props.item.subheading}</h3>

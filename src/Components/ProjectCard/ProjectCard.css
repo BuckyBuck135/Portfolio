@@ -21,7 +21,7 @@
   object-position: top;
   width: 100%;
   filter:brightness(85%);
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 /* ON HOVER */
@@ -51,6 +51,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-card--tags {
+  color: var(--accent)
 }
 
 .modal--open-btn {
