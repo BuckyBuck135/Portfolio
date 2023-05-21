@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from 'react-modal';
+import { useRef, useLayoutEffect } from "react";
 import Carrousel from "../Carrousel/Carrousel";
 import "./ProjectCard.css"
 gsap.registerPlugin(ScrollTrigger);
@@ -19,16 +20,15 @@ export default function ProjectCard(props) {
 
     const [isHovering, setIsHovering] = React.useState(false);
     const handleClickIn = (e) => {
-        console.log(e.target.id)
         if(e.target.id) {
-            setIsHovering(true);
+            setIsHovering(prev => !prev);
         } else {
-            setIsHovering(false)
+            setIsHovering(prev => !prev)
         }
     }
 
     const handleClickOut = () => {
-        setIsHovering(false);
+        setIsHovering(prev => !prev);
     }
 
     const stack = props.item.stack.map((item, index) => {
@@ -37,7 +37,27 @@ export default function ProjectCard(props) {
 
     const tags = props.item.tags.join(" / ")
     const background = props.item.pictures[0]
+    
+    // const cards = gsap.utils.toArray('.project-card--wrapper');
+    // cards.forEach(card => {
+    //   gsap.to(card, { 
+    //     x: 0,
+    //     opacity: 1,
+    //     duration: 0.5,
+    //     scrollTrigger: {
+    //       trigger: card,
+    //       toggleActions: "play none play reset"
+    //     }
+    //   })
+    // });
+    
+    const comp = useRef(); // create a ref for the root level element (for scoping)
 
+useLayoutEffect(() => {
+  
+  // create our context. This function is invoked immediately and all GSAP animations and ScrollTriggers created during the execution of this function get recorded so we can revert() them later (cleanup)
+  let ctx = gsap.context(() => {
+    
     const cards = gsap.utils.toArray('.project-card--wrapper');
     cards.forEach(card => {
       gsap.to(card, { 
@@ -51,6 +71,11 @@ export default function ProjectCard(props) {
       })
     });
     
+  }, comp); // <- IMPORTANT! Scopes selector text
+  
+  return () => ctx.revert(); // cleanup
+  
+}, []); // <- empty dependency Array so it doesn't re-run on every render
 
     return (
         <a 
