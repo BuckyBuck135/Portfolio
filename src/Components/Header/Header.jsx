@@ -20,13 +20,13 @@ export default function Header() {
         <header id="header">
             <nav>
                 <div className="nav--logo">
-                    {isDesktop ? (<img className="logo" src="logo-accent.svg" />) : (<img className="logo" src="logo.svg" />)}
+                    {isDesktop ? (<img className="logo" src="logo-accent.svg" alt="logo" />) : (<img className="logo" src="logo.svg" alt="logo" />)}
                 </div>
                 <div className="nav--buttons">
                     <ul>
-                        <li><a href="#section--about" className="nav--button"><FontAwesomeIcon icon={faUserGraduate} /></a></li>
-                        <li><a href="#section--projects" className="nav--button"><FontAwesomeIcon icon={faLaptopFile} /></a></li>
-                        <li><a href="#section--contact" className="nav--button"><FontAwesomeIcon icon={faEnvelope} /></a></li>
+                        <li><a href="#section--about" className="nav--button" aria-label="Lien vers la section à propos"><FontAwesomeIcon icon={faUserGraduate} /></a></li>
+                        <li><a href="#section--projects" className="nav--button" aria-label="Lien vers la section projets"><FontAwesomeIcon icon={faLaptopFile} /></a></li>
+                        <li><a href="#section--contact" className="nav--button" aria-label="Lien vers la section contact"><FontAwesomeIcon icon={faEnvelope} /></a></li>
                     </ul>
                 </div>
                 <div className="nav--links">
