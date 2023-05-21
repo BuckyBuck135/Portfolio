@@ -38,6 +38,7 @@
 
 .aside--icon {
     color: var(--white);
+    transition: var(--transition)
 }
 
 .aside--a {
@@ -48,6 +49,7 @@
     font-size: var(--font-xs);
     line-height: var(--font-l);
     letter-spacing: 0.1em;
+    transition: var(--transition)
 }
 
 .aside--inner::after {
