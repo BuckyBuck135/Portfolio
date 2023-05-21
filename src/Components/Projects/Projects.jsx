@@ -1,10 +1,7 @@
 import React from "react"
-import ReactDOM from 'react-dom';
-import Modal from 'react-modal';
 import "./Projects.css"
 import {data} from "../../data/projects-data"
 import ProjectCard from "../ProjectCard/ProjectCard";
-
 
 export default function Projects() {
 const cards = data.map((item, index) => {
@@ -15,7 +12,7 @@ const cards = data.map((item, index) => {
       />
   )
 })
-  
+
     return (
         <section id="section--projects" className="section--projects shapedividers_com-7055">
             <div className="container"> 
