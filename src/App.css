@@ -67,7 +67,6 @@ input[type="submit"] {
   color: var(--accent);
   background-color: transparent;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 button:hover {
@@ -80,6 +79,36 @@ button:focus-visible {
 }
 
 /*****ANIMATIONS *****/
+
+.X-2 {
+  opacity: 0;
+  transform: translateX(-2em);
+}
+
+.X2 {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.X-3 {
+  opacity: 0;
+  transform: translateX(-3em);
+}
+
+.X3 {
+  opacity: 0;
+  transform: translateX(3em);
+}
+
+.Y-3 {
+  opacity: 0;
+  transform: translateY(-3em);
+}
+
+.Y3 {
+  opacity: 0;
+  transform: translateY(3em);
+}
 
 .fadeInUp {
   opacity: 0;
