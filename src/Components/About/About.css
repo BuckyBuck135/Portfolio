@@ -3,13 +3,6 @@
     padding-top: 2em;
 }
 
-.section--about .container {
-    transition: all ease-in 1s;
-    transform: translateY(3rem);
-    opacity: 0;
-}
-
-
 .shapedividers_com-2702{
     overflow:hidden;
     position:relative;
