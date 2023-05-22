@@ -1,11 +1,17 @@
 footer {
     background-color: var(--dark-slate);
     height: 100px;
+    padding-bottom: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     position: relative;
+}
+
+footer p:first-of-type {
+    margin-top: auto;
 }
 
 .icon-wrapper {
@@ -21,8 +27,8 @@ footer {
     position: absolute;
     margin: auto;
     inset: -25px 0 auto 0;
-
 }
+
 .fa-angles-up {
     color: var(--accent);
     font-size: var(--font-heading);
@@ -37,8 +43,9 @@ footer p {
     font-family: var(--font-mono);
     font-size: var(--font-xs);
     padding-bottom: 0.5em;
-
 }
+
+
 @keyframes pointUp {
     to {
         transform: translateY(-5px);
