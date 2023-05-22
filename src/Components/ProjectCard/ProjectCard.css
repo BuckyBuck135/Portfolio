@@ -24,6 +24,10 @@
   transition: var(--transition);
 }
 
+.project-card--image:hover {
+  filter:brightness(100%);
+}
+
 /* ON HOVER */
 .project-card--on-hover {
   position: absolute;
