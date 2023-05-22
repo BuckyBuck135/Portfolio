@@ -56,7 +56,8 @@
     .tech-card,
     .tech-card:nth-child(even) {
         flex-direction: column;
-        max-width: 170px;
+        max-width: 200px;
+        padding: 1em;
     }
 
     .card--heading {

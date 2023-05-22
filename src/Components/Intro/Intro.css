@@ -6,10 +6,9 @@
 .intro--cards {
     width: 100%;
     margin: 3em auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1.5em;
 }
 
 /* TYPOGRAPHY */
@@ -124,23 +123,24 @@ blockquote::after {
         blink 750ms steps(2, start) forwards 12; /*stops after 12 blinks*/
 }
 
-
-
-
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px){
 
     .intro--cards {
         width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         column-gap: 2em;
         row-gap: 3em;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
 
     blockquote {
         margin: 4em auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .intro--cards {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
     }
 }
