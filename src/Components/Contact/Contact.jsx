@@ -14,7 +14,7 @@ export default function Contact() {
                 opacity: 1,
                 duration: 1,
                 scrollTrigger: {
-                    trigger: ".section--contact .container",
+                    trigger: ".section--contact .contact--subheading",
                     toggleActions: "play none play reset"
                 }
                 })
