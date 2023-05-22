@@ -42,18 +42,6 @@ export default function About() {
                     toggleActions: "play none play reset"
                 }
             }) 
-            
-            //animating skills
-            gsap.set(".about--skills li", {opacity: 0});
-            gsap.to(".about--skills li", { 
-                opacity: 1,
-                duration: 1,
-                stagger: 0.15,
-                scrollTrigger: {
-                    trigger: ".about--skills",
-                    toggleActions: "play none play reset"
-                }
-            })
         });  
         return () => ctx.revert(); // cleanup
         }, []); // <- empty dependency Array so it doesn't re-run on every render
