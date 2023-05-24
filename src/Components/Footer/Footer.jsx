@@ -16,7 +16,7 @@ export default function Footer() {
     
       gsap.to("footer p", {x: 0, opacity: 1, duration: 1, scrollTrigger: {
         trigger: "footer",
-        toggleActions: "play none play reset"
+        toggleActions: "play none none reset"
       }})
         
     });  

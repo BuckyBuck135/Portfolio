@@ -15,7 +15,7 @@ export default function Contact() {
                 duration: 1,
                 scrollTrigger: {
                     trigger: ".section--contact .contact--subheading",
-                    toggleActions: "play none play reset"
+                    toggleActions: "play none none reset"
                 }
                 })
             });
