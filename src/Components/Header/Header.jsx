@@ -22,8 +22,8 @@ export default function Header() {
                 <div className="nav--logo">
                     {isDesktop ? (<img className="logo" src="logo-accent.svg" alt="logo" />) : (<img className="logo" src="logo.svg" alt="logo" />)}
                 </div>
-                <div className="nav--buttons">
-                    <ul>
+                <div>
+                    <ul className="nav--buttons">
                         <li><a href="#section--about" className="nav--button" aria-label="Lien vers la section à propos"><FontAwesomeIcon icon={faUserGraduate} /></a></li>
                         <li><a href="#section--projects" className="nav--button" aria-label="Lien vers la section projets"><FontAwesomeIcon icon={faLaptopFile} /></a></li>
                         <li><a href="#section--contact" className="nav--button" aria-label="Lien vers la section contact"><FontAwesomeIcon icon={faEnvelope} /></a></li>

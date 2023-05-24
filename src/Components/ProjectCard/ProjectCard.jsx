@@ -44,20 +44,20 @@ export default function ProjectCard(props) {
         const cards = gsap.utils.toArray('.project-card--wrapper');
         cards.forEach(card => {
             gsap.to(card, { 
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: card,
-                toggleActions: "play none play reset"
-            }
+                x: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: card,
+                    toggleActions: "play none play reset"
+                }
             })
         });
         
-    });  
+    }, );  
     return () => ctx.revert(); // cleanup
     
-    }, []); // <- empty dependency Array so it doesn't re-run on every render
+    }, [props]);
 
     return (
         <a 

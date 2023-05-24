@@ -12,6 +12,7 @@
   width: 100%;
   height: 175px;
   display: flex;
+  box-shadow: 8px 7px 10px #0000008c;
   position: relative;
   cursor: pointer;
 }

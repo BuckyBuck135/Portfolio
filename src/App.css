@@ -18,6 +18,11 @@ body {
   color: var(--white);
 }
 
+.nav--buttons {
+  display: flex;
+    gap: 1em;
+}
+
 section {
   padding-bottom: 2em;
 }
