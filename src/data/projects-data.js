@@ -13,14 +13,15 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/kasa/DEKSTOP-localhost_3000_fiche-logement_c67ab8a7.png",
-            "/images/kasa/TABLET-kasa-location.netlify.app_a-propos.png",
-            "/images/kasa/kasa-location.netlify.app_a-propos.png",
-            "/images/kasa/localhost_3000_fiche-logement_b9123946(iPhone%2012%20Pro).png",
+            "/images/kasa/DEKSTOP-localhost_3000_fiche-logement_c67ab8a7.webp",
+            "/images/kasa/TABLET-kasa-location.netlify.app_a-propos.webp",
+            "/images/kasa/kasa-location.netlify.app_a-propos.webp",
+            "/images/kasa/localhost_3000_fiche-logement_b9123946(iPhone%2012%20Pro).webp",
+            "/images/kasa/mockup.webp",
         ],
         heading: "Kasa",
         subheading: "Location d’appartements entre particuliers",
-        description: "Ce projet OpenClassrooms utilise React Router pour la navigation entre les 4 pages et met en exergue la bonne pratique de composants réutilisables. J'y ai également inclus une couche services pour la future intégration d'une API.",
+        description: "J'ai développé ce projet OpenClassrooms en React et CSS à partir d'une maquette Figma déjà réalisée et sans bibliothèques tierces. J'ai utilisé React Router pour la navigation entre les 4 pages et mis en exergue la bonne pratique de composants réutilisables. J'y ai également inclus une couche services pour la future intégration d'une API.",
         stack: [
             "fa-brands fa-react",
             "fa-brands fa-css3-alt"
@@ -35,10 +36,11 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/grimoire/cover.jpg",
-            "/images/grimoire/book-detail.jpg",
-            "/images/grimoire/laptop2.jpg",
-            "/images/grimoire/tablet.jpg",
+            "/images/grimoire/cover.webp",
+            "/images/grimoire/book-detail.webp",
+            "/images/grimoire/laptop2.webp",
+            "/images/grimoire/mockup.webp",
+            "/images/grimoire/addbook.webp",
         ],
         heading: "Mon Vieux Grimoire",
         subheading: "Site communautaire de notations de livres",
@@ -65,6 +67,9 @@ export const data = [
             "/images/sophie-bluel/gallery.jpg",
             "/images/sophie-bluel/modal1.jpg",
             "/images/sophie-bluel/modal2.jpg",
+            "/images/sophie-bluel/mockup.jpg",
+            "/images/sophie-bluel/mobile.jpg",
+            "/images/sophie-bluel/tablet.jpg",
         ],
         heading: "Sophie Bluel",
         subheading: "Portfolio pour architecte d'intérieur",
@@ -111,16 +116,16 @@ export const data = [
     },  
     {
         id: nanoid(),
-        cover: "/images/booki/mockup.jpg",
         pictures: [
-            "/images/booki/desktop.jpg",         
-            "/images/booki/mobile.jpg",         
-            "/images/booki/tablet.jpg",         
-            "/images/booki/activites.jpg",         
+            "/images/booki/desktop.webp",         
+            "/images/booki/mobile.webp",         
+            "/images/booki/tablet.webp",         
+            "/images/booki/activites.webp",         
+            "/images/booki/mockup.webp",         
         ],
         heading: "Booki",
         subheading: "Trouvez votre hébergement pour des vacances de rêve",
-        description: "Booki fut mon premier projet OpenClassrooms. En partantd'un design Figma, jai intégré cette interface totalement responsive (desktop, tablette, mobile) en HTML et CSS. Cette version ne prévoyant pas de JS, les filtres ne sont donc pas fonctionnels.",
+        description: "Booki fut mon premier projet OpenClassrooms. En partant d'un design Figma, j'ai intégré cette interface totalement responsive (desktop, tablette, mobile) en HTML et CSS. Cette version ne prévoyant pas de JS, les filtres ne sont donc pas fonctionnels.",
         stack: [
             "fa-brands fa-html5",
             "fa-brands fa-css3-alt"
