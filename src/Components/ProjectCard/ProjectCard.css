@@ -230,6 +230,8 @@
 
   .project-card {
     height: 250px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .modal--inner {
