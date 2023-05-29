@@ -60,7 +60,7 @@ export default function ProjectCard(props) {
     }, [props]);
 
     return (
-        <a 
+        <div 
         className="project-card--wrapper"
             onClick={handleClickIn}
         > 
@@ -104,10 +104,8 @@ export default function ProjectCard(props) {
                         <button className="modal--link modal--close-btn"onClick={closeModal}>X</button>
                     </div> 
                 </div>
-
-                 
             </Modal>
-        </a>
+        </div>
         
     )
 }
