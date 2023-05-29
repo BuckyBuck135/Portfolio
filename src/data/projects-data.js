@@ -61,15 +61,15 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/sophie-bluel/cover.jpg",
-            "/images/sophie-bluel/login.jpg",
-            "/images/sophie-bluel/dashboard.jpg",
-            "/images/sophie-bluel/gallery.jpg",
-            "/images/sophie-bluel/modal1.jpg",
-            "/images/sophie-bluel/modal2.jpg",
-            "/images/sophie-bluel/mockup.jpg",
-            "/images/sophie-bluel/mobile.jpg",
-            "/images/sophie-bluel/tablet.jpg",
+            "/images/sophie-bluel/cover.webp",
+            "/images/sophie-bluel/login.webp",
+            "/images/sophie-bluel/dashboard.webp",
+            "/images/sophie-bluel/gallery.webp",
+            "/images/sophie-bluel/modal1.webp",
+            "/images/sophie-bluel/modal2.webp",
+            "/images/sophie-bluel/mockup.webp",
+            "/images/sophie-bluel/mobile.webp",
+            "/images/sophie-bluel/tablet.webp",
         ],
         heading: "Sophie Bluel",
         subheading: "Portfolio pour architecte d'intérieur",
@@ -90,11 +90,11 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/nina-carducci/cover.jpg",
-            "/images/nina-carducci/lighthouse.jpg",
-            "/images/nina-carducci/gallery.jpg",
-            "/images/nina-carducci/services.jpg",
-            "/images/nina-carducci/contact.jpg",          
+            "/images/nina-carducci/cover.webp",
+            "/images/nina-carducci/lighthouse.webp",
+            "/images/nina-carducci/gallery.webp",
+            "/images/nina-carducci/services.webp",
+            "/images/nina-carducci/contact.webp",          
         ],
         heading: "Nina Carducci",
         subheading: "Débogage, optimisation et SEO",
@@ -140,10 +140,11 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/sliced/cover.jpg",
-            "/images/sliced/order.jpg",
-            "/images/sliced/form.jpg",
-            "/images/sliced/pay.jpg",          
+            "/images/sliced/cover.webp",
+            "/images/sliced/order.webp",
+            "/images/sliced/form.webp",
+            "/images/sliced/pay.webp",          
+            "/images/sliced/mockup.webp",          
         ],
         heading: "Sliced",
         subheading: "Commande de pizzas en ligne",
@@ -164,9 +165,10 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/password-generator/cover.jpg",
-            "/images/password-generator/mobile.jpg",
-            "/images/password-generator/copied.jpg"
+            "/images/password-generator/cover.webp",
+            "/images/password-generator/mobile.webp",
+            "/images/password-generator/copied.webp",
+            "/images/password-generator/mockup.webp"
             
         ],
         heading: "Générateur de mots de passe",
@@ -189,11 +191,11 @@ export const data = [
     {
         id: nanoid(),
         pictures: [
-            "/images/menumaker/cover.jpg",
-            "/images/menumaker/veille.jpg",
-            "/images/menumaker/flowchart.jpg",
-            "/images/menumaker/kanban.jpg",
-            "/images/menumaker/table.jpg",
+            "/images/menumaker/cover.webp",
+            "/images/menumaker/veille.webp",
+            "/images/menumaker/flowchart.webp",
+            "/images/menumaker/kanban.webp",
+            "/images/menumaker/table.webp",
             
         ],
         heading: "Menu Maker by Qwenta",
