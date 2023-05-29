@@ -70,7 +70,7 @@ export default function About() {
                     </div>
                     <div className="about--picture">
                         <div className="about--image-wrapper">
-                        <img className="about--image" src="portrait-geoffrey.jpg" alt="Geoffrey Le Meur souriantm face à l'objectif"/>
+                        <img className="about--image" src="portrait-geoffrey.jpg" alt="Geoffrey Le Meur souriantm face à l'objectif" loading="lazy"/>
                         </div>
                     </div>
                 </div>

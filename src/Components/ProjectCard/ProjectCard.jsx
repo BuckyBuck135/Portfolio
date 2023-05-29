@@ -65,7 +65,7 @@ export default function ProjectCard(props) {
             onClick={handleClickIn}
         > 
             <article  className="project-card">
-                <img id={props.item.id} className="project-card--image" src={background} alt={props.item.heading}/>
+                <img id={props.item.id} className="project-card--image" src={background} alt={props.item.heading} loading="lazy"/>
 
                 {isHovering &&
                     <div className="project-card--on-click" onClick={handleClickOut}>
