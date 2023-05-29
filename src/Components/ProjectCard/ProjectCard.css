@@ -29,8 +29,8 @@
   filter:brightness(100%);
 }
 
-/* ON HOVER */
-.project-card--on-hover {
+/* ON CLICK */
+.project-card--on-click {
   position: absolute;
   background-color: var(--dark-slate);
   width: 100%;
@@ -43,12 +43,12 @@
   transition: var(--transition);
 }
 
-.project-card--on-hover h2 {
+.project-card--on-click h2 {
   font-family: var(--font-mono);
   color: var(--white)
 }
 
-.project-card--on-hover h3 {
+.project-card--on-click h3 {
   color: var(--subheading);
 }
 

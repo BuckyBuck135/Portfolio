@@ -68,7 +68,7 @@ export default function ProjectCard(props) {
                 <img id={props.item.id} className="project-card--image" src={background} alt={props.item.heading}/>
 
                 {isHovering &&
-                    <div className="project-card--on-hover" onClick={handleClickOut}>
+                    <div className="project-card--on-click" onClick={handleClickOut}>
                         <div className="cardFadeInUp">
                             <h2>{props.item.heading}</h2>
                             <h3>{props.item.subheading}</h3>
