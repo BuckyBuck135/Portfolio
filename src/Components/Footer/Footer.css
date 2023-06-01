@@ -1,8 +1,7 @@
 footer {
-    background-color: var(--dark-slate);
-    height: 100px;
-    padding-bottom: 1em;
+    background-color: var(--slate);
     display: flex;
+    padding-bottom: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10,8 +9,8 @@ footer {
     position: relative;
 }
 
-footer p:first-of-type {
-    margin-top: auto;
+footer p {
+    margin-top: 3em;
 }
 
 .icon-wrapper {
@@ -46,8 +45,26 @@ footer p {
 }
 
 
+.footer--icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px){
+    footer {
+        height: 100px;
+    }
+
+    .footer--icon-wrapper {
+    display: none;
+    }
+}
+
 @keyframes pointUp {
     to {
         transform: translateY(-5px);
     }
   }
+

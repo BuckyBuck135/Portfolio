@@ -1,6 +1,8 @@
 import React from "react"
 import "./Footer.css"
 import { useLayoutEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithubSquare, faInstagramSquare, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -32,7 +34,14 @@ export default function Footer() {
             </div>
         </a>
         <p className="X-2">Copyright © 2023, Geoffrey Le Meur.</p> 
-        <p className="X2">Tous droits réservés.</p>
+        <div className="footer--icon-wrapper">
+            <a className="aside--icon" href="https://www.linkedin.com/in/geoffreylemeur/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a className="aside--icon" href="https://github.com/BuckyBuck135" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
+            <a className="aside--icon" href="https://www.instagram.com/geoffrey.lm.dev/" target="_blank"><FontAwesomeIcon icon={faInstagramSquare} /></a>
+            <a className="aside--icon" href="https://twitter.com/BuckyBuck135" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} /></a>
+        </div>
+
     </footer>
   );
 }
+
