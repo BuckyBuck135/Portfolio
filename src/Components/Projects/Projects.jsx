@@ -34,9 +34,9 @@ const projectCards = cards.map((item, index) => {
 })
 
     return (
-        <section id="section--projects" className="section--projects shapedividers_com-7055">
+        <section id="section--projects" className="section--projects shapedividers_com-1197">
             <div className="container"> 
-              <h2 className="section--heading"><span className="section--number">02.</span> Projets</h2> 
+              <h2 className="section--heading"><span className="section--number">03.</span> Projets</h2> 
               <div className="nav--buttons">
                 <button className="nav--button" onClick={handleClick} value="ALL">TOUS</button>
                 <button className="nav--button" onClick={handleClick} value="REACT">REACT</button>
