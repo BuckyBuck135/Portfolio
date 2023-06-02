@@ -69,9 +69,9 @@ export default function About() {
                             <li>Firebase</li>
                         </ul>
                     </div>
-                    <div className="about--picture">
+                    <div>
                         <div className="about--image-wrapper">
-                        <img className="about--image" src="portrait-geoffrey.webp" alt="Geoffrey Le Meur souriantm face à l'objectif" loading="lazy" width="250"/>
+                            <img className="about--image" src="portrait-geoffrey.webp" alt="Geoffrey Le Meur souriantm face à l'objectif" loading="lazy" width="250"/>
                         </div>
                     </div>
                 </div>

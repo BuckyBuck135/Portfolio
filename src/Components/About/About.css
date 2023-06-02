@@ -59,13 +59,7 @@
     left: -15px;
 }
 
-.about-picture {
-    position: relative;
-    max-width: 300px;
-}
-
 .about--image-wrapper{
-    display: block;
     position: relative;
     width: 70%;
     margin: 0 auto;
@@ -94,7 +88,6 @@
     left: 10px;
     z-index: -1;
     transition: var(--transition);
-
 }
 
 .about--image-wrapper:hover::after {
