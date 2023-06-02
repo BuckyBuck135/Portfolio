@@ -1,9 +1,9 @@
 import React from "react";
 import Modal from 'react-modal';
 import { useLayoutEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
 import Carrousel from "../Carrousel/Carrousel";
 import "./ProjectCard.css"
-gsap.registerPlugin(ScrollTrigger);
 
 Modal.setAppElement('#root');
 
