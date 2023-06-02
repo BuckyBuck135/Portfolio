@@ -31,7 +31,7 @@ export default function Header() {
                 </div>
                 <div className="nav--links">
                     <ul>
-                        <li><a href="#section--about" className="nav--text"><span className="nav--span">01.</span>A propos</a></li>
+                        <li><a href="#section--about" className="nav--text"><span className="nav--span">01.</span>À propos</a></li>
                         <li><a href="#section--skills" className="nav--text"><span className="nav--span">02.</span>Compétences</a></li>
                         <li><a href="#section--projects" className="nav--text"><span className="nav--span">03.</span>Projets</a></li>
                         <li><a href="#section--contact" className="nav--text"><span className="nav--span">04.</span>Contact</a></li>
