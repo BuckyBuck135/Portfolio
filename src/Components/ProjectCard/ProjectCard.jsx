@@ -41,7 +41,7 @@ export default function ProjectCard(props) {
     useLayoutEffect(() => {
     // create our context. This function is invoked immediately and all GSAP animations and ScrollTriggers created during the execution of this function get recorded so we can revert() them later (cleanup)
     let ctx = gsap.context(() => {
-        const cards = gsap.utils.toArray('.project-card--wrapper');
+        const cards = gsap.utils.toArray('.project-card');
         cards.forEach(card => {
             gsap.to(card, { 
                 x: 0,
