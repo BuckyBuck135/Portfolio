@@ -46,6 +46,26 @@ export default function Skills() {
                             </div>
                         </div>
                     </article>
+
+                    <article className="skills--card">
+                        <i class=" skills--icon fa-solid fa-screwdriver-wrench"></i>
+                        <div className="skills--heading">
+                            <h4><span className="skills--heading-accent">Outils</span> et</h4>
+                            <h4>Logiciels</h4>
+                        </div>
+                        <div className="skills--text-wrapper no-decoration">
+                            <div className="skills--text">
+                                <ul className="skills--tools">
+                                    <li>Figma</li>
+                                    <li>Illustrator</li>
+                                    <li>Notion</li>
+                                    <li>Photoshop</li>
+                                    <li>Git</li>
+                                    <li>InDesign</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>    
