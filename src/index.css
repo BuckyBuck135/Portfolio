@@ -66,6 +66,10 @@ html {
   scroll-behavior: smooth;
 } 
 
+ul {
+  list-style: none;
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;

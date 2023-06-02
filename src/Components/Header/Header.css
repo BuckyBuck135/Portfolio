@@ -22,10 +22,9 @@ nav {
     display: none;
 }
 
-ul {
+header ul {
     display: flex;
     gap: 1em;
-    list-style: none;
 }
 
 /* BUTTONS for mobile */
