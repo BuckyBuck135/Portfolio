@@ -21,9 +21,9 @@
     align-items: center;
     width: 50px;
     height: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border-radius: var(--border-radius);
-    padding: 0.3em;
+    padding: 0.2em;
     background: var(--white);
     color: var(--accent);
     transition: all 0.25s;
