@@ -35,8 +35,8 @@
     width: 100%;
     margin: 3em auto;
     display: grid;
-    grid-template-columns: auto;
-    gap: 1.5em;
+    column-gap: 2em;
+    row-gap: 3em;
 }
 
 .skills--card {
@@ -139,21 +139,46 @@
     top: -25px;
 }
 
-.skills--card:nth-child(1) .skills--text::before,
-.skills--card:nth-child(1) .skills--text::after {
+.skills--card-wrapper:nth-child(1) .skills--text::before,
+.skills--card-wrapper:nth-child(1) .skills--text::after {
     content: "<h1>";
 }
 
-.skills--card:nth-child(2) .skills--text::before,
-.skills--card:nth-child(2) .skills--text::after {
+.skills--card-wrapper:nth-child(2) .skills--text::before,
+.skills--card-wrapper:nth-child(2) .skills--text::after {
     content: "<h2>";
 }
 
-.skills--card:nth-child(3) .skills--text::before,
-.skills--card:nth-child(3) .skills--text::after {
+.skills--card-wrapper:nth-child(3) .skills--text::before,
+.skills--card-wrapper:nth-child(3) .skills--text::after {
     content: "<h3>";
 }
 
+/* Decoration - card outline */
+.skills--card-wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.skills--card-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    border-radius: var(--border-radius);
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    transition: var(--transition);
+}
+
+.skills--card-wrapper:nth-child(odd)::after {
+    border: 2px solid var(--accent)
+}
+
+.skills--card-wrapper:nth-child(even)::after {
+    border: 2px solid var(--heading)
+}
 
 @media screen and (min-width: 768px){
     .section--skills {
@@ -161,9 +186,15 @@
     }
 
     .skills--cards {
-        width: 80%;
-        column-gap: 2em;
-        row-gap: 3em;
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
-    }   
+        width: 90%;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }  
+    
+    .skills--heading {
+        font-size: var(--font-xl);
+    }
+
+    .skills--text {
+        font-size: var(--font-m);
+    }
 }
