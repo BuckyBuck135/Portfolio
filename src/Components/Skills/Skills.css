@@ -208,4 +208,14 @@
     .skills--text {
         font-size: var(--font-m);
     }
+
+    .skills--card-wrapper:nth-child(1)::after,
+    .skills--card-wrapper:nth-child(4)::after {
+        border: 2px solid var(--accent)
+    }
+    
+    .skills--card-wrapper:nth-child(2)::after,
+    .skills--card-wrapper:nth-child(3)::after {
+        border: 2px solid var(--heading)
+    }
 }
