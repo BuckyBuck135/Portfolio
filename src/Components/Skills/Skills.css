@@ -180,14 +180,25 @@
     border: 2px solid var(--heading)
 }
 
+/* Animation */
+.skills--card-wrapper:nth-child(odd) {
+    opacity: 0;
+    transform: translateX(-3em);
+  }
+  
+  .skills--card-wrapper:nth-child(even) {
+    opacity: 0;
+    transform: translateX(3em);
+  }
+
 @media screen and (min-width: 768px){
     .section--skills {
         padding-top: 4em;
     }
 
     .skills--cards {
-        width: 90%;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 3em;
     }  
     
     .skills--heading {
