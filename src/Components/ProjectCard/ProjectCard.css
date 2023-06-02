@@ -1,9 +1,9 @@
-.project-card:nth-child(odd) {
+.project-card--wrapper:nth-child(odd) {
   opacity: 0;
   transform: translateX(-3em);
 }
 
-.project-card:nth-child(even) {
+.project-card--wrapper:nth-child(even) {
   opacity: 0;
   transform: translateX(3em);
 }

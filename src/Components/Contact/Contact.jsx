@@ -12,10 +12,10 @@ export default function Contact() {
                 gsap.to(input, { 
                 x: 0,
                 opacity: 1,
-                duration: 1,
+                duration: 1.5,
                 scrollTrigger: {
-                    trigger: ".section--contact .contact--subheading",
-                    toggleActions: "play none none reset"
+                    trigger: ".section--contact",
+                    toggleActions: "play play play reverse"
                 }
                 })
             });
