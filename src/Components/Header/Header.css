@@ -32,7 +32,7 @@ header ul {
     display: inline-block;
     text-align: center;
     width: 20px;
-    padding: 0.3em 0.8em;
+    padding: 0.3em 0.6em;
     border-radius: var(--border-radius);
     border: 1px solid var(--heading);
     color: var(--heading);
