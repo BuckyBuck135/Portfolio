@@ -30,7 +30,6 @@
 
 .form--input:hover {
     outline: 1px solid var(--white);
-
 }
 
 form input[type="text"] {
@@ -50,10 +49,6 @@ input::placeholder,
 textarea::placeholder {
     color: var(--white);
     filter: brightness(0.7);
-}
-
-textarea::placeholder {
-    padding-top: 0.8em
 }
 
 form button[type="submit"] {
