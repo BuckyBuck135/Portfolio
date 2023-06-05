@@ -1,29 +1,29 @@
 import React from "react"
 import "./Contact.css"
-import { useLayoutEffect } from "react";
-gsap.registerPlugin(ScrollTrigger);
+// import { useLayoutEffect } from "react";
+// gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
-  useLayoutEffect(() => {
-    // create our context. This function is invoked immediately and all GSAP animations and ScrollTriggers created during the execution of this function get recorded so we can revert() them later (cleanup)
-    let ctx = gsap.context(() => {
-      const inputs = gsap.utils.toArray('.staggered');
-      inputs.forEach(input => {
-                gsap.to(input, { 
-                x: 0,
-                opacity: 1,
-                duration: 1.5,
-                scrollTrigger: {
-                    trigger: ".section--contact",
-                    toggleActions: "play play play reverse"
-                }
-                })
-            });
+//   useLayoutEffect(() => {
+//     // create our context. This function is invoked immediately and all GSAP animations and ScrollTriggers created during the execution of this function get recorded so we can revert() them later (cleanup)
+//     let ctx = gsap.context(() => {
+//       const inputs = gsap.utils.toArray('.staggered');
+//       inputs.forEach(input => {
+//                 gsap.to(input, { 
+//                 x: 0,
+//                 opacity: 1,
+//                 duration: 1.5,
+//                 scrollTrigger: {
+//                     trigger: ".section--contact",
+//                     toggleActions: "play play play reverse"
+//                 }
+//                 })
+//             });
         
-    });  
-    return () => ctx.revert(); // cleanup
+//     });  
+//     return () => ctx.revert(); // cleanup
     
-    }, []); // <- empty dependency Array so it doesn't re-run on every render
+//     }, []); // <- empty dependency Array so it doesn't re-run on every render
   
   return (
     <section id="section--contact" className="section--contact">
@@ -37,12 +37,12 @@ export default function Contact() {
             <form name="contact" method="POST" data-netlify="true">
                 <input aria-label="contact" type="hidden" name="form-name" value="contact" />
                 <label className="visually-hidden"></label>
-                <input aria-label="nom" className="form--input staggered X-3" type="text" name="name" placeholder="Nom" required />
+                <input aria-label="nom" className="form--input" type="text" name="name" placeholder="Nom" required />
                 <label className="visually-hidden"></label>
-                <input aria-label="email" className="form--input staggered X3" type="text" name="email" placeholder="Email" required />
+                <input aria-label="email" className="form--input" type="text" name="email" placeholder="Email" required />
                 <label className="visually-hidden"></label>
-                <textarea aria-label="envoyer" className="form--input staggered X-3" name="message" placeholder="Votre message" required />
-                <button type="submit" className="timeBombButton staggered X3">
+                <textarea aria-label="envoyer" className="form--input" name="message" placeholder="Votre message" required />
+                <button type="submit" className="timeBombButton">
                   <span></span><span></span><span></span><span></span>
                   Envoyer</button>
             </form>
