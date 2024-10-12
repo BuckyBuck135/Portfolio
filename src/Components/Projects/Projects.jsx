@@ -39,6 +39,7 @@ const projectCards = cards.map((item, index) => {
               <h2 className="section--heading"><span className="section--number">03.</span> Projets</h2> 
               <div className="nav--buttons">
                 <button className="nav--button" onClick={handleClick} value="ALL">TOUS</button>
+                <button className="nav--button" onClick={handleClick} value="ASTRO">ASTRO</button>
                 <button className="nav--button" onClick={handleClick} value="REACT">REACT</button>
                 <button className="nav--button" onClick={handleClick} value="HTML">HTML</button>
                 <button className="nav--button" onClick={handleClick} value="NODE">NODE</button>

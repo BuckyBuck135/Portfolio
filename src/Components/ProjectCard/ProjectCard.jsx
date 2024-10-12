@@ -32,7 +32,7 @@ export default function ProjectCard(props) {
     }
 
     const stack = props.item.stack.map((item, index) => {
-        return <i key={index} className={item}></i>
+        return <img key={index} src={item} alt="stack icon" />
     })
 
     const tags = props.item.tags.join(" / ")

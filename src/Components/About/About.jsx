@@ -9,8 +9,8 @@ export default function About() {
         let ctx = gsap.context(() => {
 
             //animating heading
-            gsap.set(".section--about .container .section--heading", {y: "-=40", opacity: 0});
-            gsap.to(".section--about .container .section--heading", { 
+            gsap.set(".section--about .container .section--heading", { y: "-=40", opacity: 0 });
+            gsap.to(".section--about .container .section--heading", {
                 y: 0,
                 opacity: 1,
                 duration: 1,
@@ -21,8 +21,8 @@ export default function About() {
             })
 
             //animating text
-            gsap.set(".about--text", {y: "-=30", opacity: 0});
-            gsap.to(".about--text", { 
+            gsap.set(".about--text", { y: "-=30", opacity: 0 });
+            gsap.to(".about--text", {
                 y: 0,
                 opacity: 1,
                 duration: 1.5,
@@ -31,10 +31,10 @@ export default function About() {
                     toggleActions: "play none play reset"
                 }
             })
-            
+
             //animating skills
-            gsap.set(".about--skills li", {opacity: 0});
-            gsap.to(".about--skills li", { 
+            gsap.set(".about--skills li", { opacity: 0 });
+            gsap.to(".about--skills li", {
                 opacity: 1,
                 duration: 1,
                 stagger: 0.15,
@@ -43,25 +43,28 @@ export default function About() {
                     toggleActions: "play none play reset"
                 }
             })
-        });  
+        });
         return () => ctx.revert(); // cleanup
-        }, []); // <- empty dependency Array so it doesn't re-run on every render
+    }, []); // <- empty dependency Array so it doesn't re-run on every render
 
     return (
         <section id="section--about" className="section--about shapedividers_com-2702">
-            <div className="container"> 
-                <h2 className="section--heading"><span className="section--number">01.</span> À propos</h2> 
+            <div className="container">
+                <h2 className="section--heading"><span className="section--number">01.</span> À propos</h2>
                 <div className="about--grid">
                     <div className="about--text">
-                        <p>Bonjour ! Je m'appelle Geoffrey Le Meur et je suis un <span className="about--span">développeur web freelance</span> passionné par la création de sites Internet offrant une expérience utilisateur exceptionnelle. 
-                        Également chef d'une petite entreprise dans l'hôtellerie, je me spécialise dans la <span className="about--span">création de sites vitrines pour PME</span> afin d'offrir à mes clients la visibilité qu'ils méritent.</p>
-                        <p>Geek depuis mon enfance, mon intérêt pour le développement s'est matérialisé en 2022 lorsque j'ai pris en main le site Internet de mon entreprise suite au départ de notre développeur. 
-                        Il fallait apprendre comment gérer et maintenir un site, et vite !</p>
-                        <p>Je me suis donc formé et ai obtenu une <span className="about--span">certification professionnelle "Développeur intégrateur web"</span> équivalent bac +2 auprès de OpenClassrooms. J'ai également suivi le cursus <span className="about--span">"Front-end Career Path"</span> de Scrimba pour continuer à me perfectionner. </p>
+                        <p>Bonjour ! Je m'appelle Geoffrey Le Meur et je suis un <span className="about--span">développeur web freelance</span> passionné par la création de sites Internet offrant une expérience utilisateur exceptionnelle.
+                            Également chef d'une petite entreprise dans l'hôtellerie, je me spécialise dans la <span className="about--span">création de sites vitrines pour PME</span> afin d'offrir à mes clients la visibilité qu'ils méritent.</p>
+                        <p>Geek depuis mon enfance, mon intérêt pour le développement s'est matérialisé en 2022 lorsque j'ai pris en main le site Internet de mon entreprise suite au départ de notre développeur.
+                            Il fallait apprendre comment gérer et maintenir un site, et vite !</p>
+                        <p>Je me suis donc formé et ai obtenu une <span className="about--span">certification professionnelle "Développeur intégrateur web"</span> équivalent bac +2 auprès de OpenClassrooms. J'ai également suivi le cursus <span className="about--span">"Front-end Career Path"</span> de Scrimba pour continuer à me perfectionner et obtenu des certificats HTML, CSS et React.</p>
+                        <p>Depuis, je suis devenu mentor pour le Bootcamp de <a href="https://v2.scrimba.com/home">Scrimba</a>, où je donne des "code reviews" aux étudiants et les guide à travers leurs projets. Je travaille également avec la start-up <a href="https://codestitch.app/">CodeStitch</a>, pour laquelle je développe et maintiens des templates développés avec Astro.</p>
                         <p>Voici quelques une des technologies que j'ai récemment utilisées dans mes projets :</p>
                         <ul className="about--skills">
-                            <li>JavaScript</li>
+                            <li>Astro</li>
                             <li>React</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
                             <li>CSS</li>
                             <li>Node.js</li>
                             <li>Express</li>
@@ -71,7 +74,7 @@ export default function About() {
                     </div>
                     <div>
                         <div className="about--image-wrapper">
-                            <img className="about--image" src="portrait-geoffrey.webp" alt="Geoffrey Le Meur souriantm face à l'objectif" loading="lazy" width="250"/>
+                            <img className="about--image" src="portrait-geoffrey.webp" alt="Geoffrey Le Meur souriantm face à l'objectif" loading="lazy" width="250" />
                         </div>
                     </div>
                 </div>

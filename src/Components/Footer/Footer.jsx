@@ -16,7 +16,7 @@ export default function Footer() {
                 <i className="fa-solid fa-angles-up"></i>
             </div>
         </a>
-        <p>Copyright © 2023, Geoffrey Le Meur.</p> 
+        <p>Copyright © 2024, Geoffrey Le Meur.</p> 
         <div className="footer--icon-wrapper">
             <a className="aside--icon" href="https://www.linkedin.com/in/geoffreylemeur/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a className="aside--icon" href="https://github.com/BuckyBuck135" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>

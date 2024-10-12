@@ -34,11 +34,11 @@ export default function Skills() {
                                 <i className=" skills--icon fa-brands fa-react"></i>
                                 <div className="skills--heading">
                                     <h4><span className="skills--heading-accent">Développeur</span> Frontend</h4>
-                                    <h4>React</h4>
+                                    <h4>Astro | React</h4>
                                 </div>
                             <div className="skills--text-wrapper">
                                 <div className="skills--text">
-                                    <p>Création d'interfaces, développement de web-apps et de sites vitrines en HTML, CSS, JS et React.</p>
+                                    <p>Développement de sites vitrines, web-apps en Astro, React, HTML, CSS, JS et TS. Création d'interfaces utilisateur garantes d'une bonne UX et accessibilité.</p>
                                 </div>
                             </div>
                         </article>
