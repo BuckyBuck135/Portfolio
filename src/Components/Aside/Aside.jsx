@@ -8,7 +8,7 @@ export default function Aside() {
 
     return (
         <div className="aside--main">
-            <div className="aside--container aside--container-left fadeInUp delay">
+            <div className="aside--container aside--container-left">
                 <div className="aside--inner">
                     <div className="aside--icon-wrapper">
                         <a aria-label="linkedIn" className="aside--icon" href="https://www.linkedin.com/in/geoffreylemeur/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
@@ -19,7 +19,7 @@ export default function Aside() {
                 </div>
             </div>
 
-            <div className="aside--container aside--container-right fadeInUp delay">
+            <div className="aside--container aside--container-right">
                 <div className="aside--inner">
                     <a aria-label="email" className="aside--a" href="mailto:geoffrey.lemeur@pm.me">geoffrey.lemeur@gmail.com</a>
                 </div>

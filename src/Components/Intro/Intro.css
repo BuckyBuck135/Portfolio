@@ -99,7 +99,7 @@ blockquote::after {
     --fadeInUpDelay: calc(var(--typewriterSpeed) + 1s)
  }
 
-.intro--bio h2::before,
+/* .intro--bio h2::before,
 .intro--bio h2::after {
     position: absolute;
     content: "";
@@ -120,8 +120,8 @@ blockquote::after {
     background: var(--accent);
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(2, start) forwards 12; /*stops after 12 blinks*/
-}
+        blink 750ms steps(2, start) forwards 12;
+} */
 
 /* MEDIA QUERIES */
 

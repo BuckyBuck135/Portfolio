@@ -41,7 +41,6 @@
 
 .skills--card {
     overflow: hidden;
-    min-height: 200px;
     border: 2px solid var(--white);
     border-radius: var(--border-radius);
     position: relative;
@@ -200,6 +199,10 @@
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 3em;
     }  
+
+    .skills--card {
+        min-height: 200px;
+    }
     
     .skills--heading {
         font-size: var(--font-xl);
