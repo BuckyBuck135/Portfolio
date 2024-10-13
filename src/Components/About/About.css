@@ -39,7 +39,7 @@
 
 .about--skills {
     display: grid;
-    grid-template-columns: repeat(2, minmax(170px, 200px));
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5em 2em;
     font-family: var(--font-mono);
     font-size: var(--font-s);

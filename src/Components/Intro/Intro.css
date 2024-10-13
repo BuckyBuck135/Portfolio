@@ -63,14 +63,14 @@ blockquote::after {
 
 blockquote::before {
 	content: '“';
-	left: -1.5rem;
-	top: -2rem;
+    left: -0.5rem;
+    top: -2.25rem;
 }
 
 blockquote::after {
 	content: '”';
-    right: -1rem;
-    bottom: -1.5rem;
+    right: 0;
+    bottom: -1.75rem;
 }
 
 .CTA {
@@ -136,6 +136,18 @@ blockquote::after {
 
     blockquote {
         margin: 4em auto 0 auto;
+    }
+
+    blockquote::before {
+        content: '“';
+        left: -1.5rem;
+        top: -2rem;
+    }
+    
+    blockquote::after {
+        content: '”';
+        right: -1rem;
+        bottom: -1.5rem;
     }
 }
 

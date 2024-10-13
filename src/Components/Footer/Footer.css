@@ -52,6 +52,10 @@ footer p {
     font-size: 1.5rem;
 }
 
+.footer--icon-wrapper svg {
+    height: 1em;
+}
+
 @media screen and (min-width: 768px){
     footer {
         height: 100px;
